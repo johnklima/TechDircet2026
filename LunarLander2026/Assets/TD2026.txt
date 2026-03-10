@@ -21,7 +21,7 @@ Team:
 
  Gerd Alicia T. Schlezinger - off the hook
 
- Andreas Steinum - coder
+ Andreas Steinum - Models/assets
 
  Ruben Tveit - textures and models 
 
