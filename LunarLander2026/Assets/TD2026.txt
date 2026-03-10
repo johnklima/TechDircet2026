@@ -1,0 +1,60 @@
+TD2026 - Lunar Lander
+
+Team:
+
+ Bendikt Adalbjarnarson - code
+
+ Sólrún Bragadóttir - models/textures/animations
+
+ Ana Guzina - assets etc.
+
+ Martin Helgerud ??
+ Jørgen Tjernslien ??
+
+ Adrian Jakobsen - models textures vfx animations
+
+ Kjartan Lia - models textures
+
+ Patryk Mikolajczyk - sound design, level design, assets.
+
+ Josefine birgitte Reinholdtsen - TEXTURE, MODELs concepts
+
+ Gerd Alicia T. Schlezinger - off the hook
+
+ Andreas Steinum - coder
+
+ Ruben Tveit - textures and models 
+
+ Wiktoria Wajda -particles explosions vfx
+
+ Elieke Winterswijk - UI 
+
+ Thea Karoline Myhre Øverdal - 3d textures concept - general 2d artwork
+
+
+WHAT WE CAN USE:
+1. raycasting
+2. maybe trigger boxes, but NO physics collisions or forces.
+3 simple radius/distance checks for collisions
+
+MUST HAVES:
+1. ships
+2. surface to land on
+2.1 landing pads/moon bases
+3. particles
+4. 3d
+
+LIKE TO HAVE
+1. asteroids/ meteors
+2. multiple planet styles
+3. Radiation (traps)
+4. rover
+5. dune worm monster
+6. our own projectiles?
+7. security dome
+
+
+MAYBE HAVES (TBD):
+1.multi-player
+2. enimies shooting at us
+3. walking on the moon
