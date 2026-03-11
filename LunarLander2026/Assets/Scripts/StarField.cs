@@ -12,8 +12,6 @@ public class StarField : MonoBehaviour {
 
   private readonly int starFieldScale = 400;
 
-  public Transform target;
-
   void Start() {
     // Read in the star data.
     StarDataLoader sdl = new();
@@ -36,13 +34,8 @@ public class StarField : MonoBehaviour {
     }
   }
 
-    private void LateUpdate()
-    {
-        if(target)
-            transform.position = target.position;
-    }
-    // Could also do in Update with Time.deltatime scaling.
-    private void FixedUpdate() {
+  // Could also do in Update with Time.deltatime scaling.
+  private void FixedUpdate() {
     if (Input.GetKey(KeyCode.Mouse1)) {
       Camera.main.transform.RotateAround(Camera.main.transform.position, Camera.main.transform.right, Input.GetAxis("Mouse Y"));
       Camera.main.transform.RotateAround(Camera.main.transform.position, Vector3.up, -Input.GetAxis("Mouse X"));

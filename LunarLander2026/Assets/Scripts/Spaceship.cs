@@ -24,7 +24,7 @@ public class Spaceship : MonoBehaviour
     
     public float mass = 1.0f;
 
-    public float rectify = 0;
+    public bool rectify = false;
 
     public bool snapshot = false;
     public Vector3 SnapshotAngularVelocity;
@@ -50,12 +50,7 @@ public class Spaceship : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rectify >= 1)
-        {
-            rectify = 0;
-        }
-
-
+ 
         bool joyPressed = false;
         //get stick inputs, rotate thrust 0 and 1 (left right)
         Vector2 left = gamepad.leftStick;
@@ -131,17 +126,17 @@ public class Spaceship : MonoBehaviour
         //next comes a VFX graph!
         {
             Vector3 scale = thrusters[(int)Thruster.LEFT].GetChild(0).localScale;
-            scale.Set(scale.x, scale.y, thrustForce[(int)Thruster.LEFT]);
+            scale.Set(scale.x, thrustForce[(int)Thruster.LEFT] + 0.5f, scale.z );
             thrusters[(int)Thruster.LEFT].GetChild(0).localScale = scale;
         }
         {
             Vector3 scale = thrusters[(int)Thruster.RIGHT].GetChild(0).localScale;
-            scale.Set(scale.x, scale.y, thrustForce[(int)Thruster.RIGHT]);
+            scale.Set(scale.x, thrustForce[(int)Thruster.RIGHT] + 0.5f, scale.z);
             thrusters[(int)Thruster.RIGHT].GetChild(0).localScale = scale;
         }
         {
             Vector3 scale = thrusters[(int)Thruster.CENTER].GetChild(0).localScale;
-            scale.Set(scale.x, scale.y, thrustForce[(int)Thruster.CENTER]);
+            scale.Set(scale.x,  thrustForce[(int)Thruster.CENTER]+0.5f, scale.z);
             thrusters[(int)Thruster.CENTER].GetChild(0).localScale = scale;
         }
         //created scope here, proly will make it into a method
@@ -196,11 +191,10 @@ public class Spaceship : MonoBehaviour
         //impulse is a one time force
         impulse = Vector3.zero;
 
-        if (joyPressed)
-            rectify = 0;
+
 
         //now try to stabilize
-        if ( !joyPressed)
+        if ( !joyPressed && rectify)
         {
 
             //lerp out angular velocity
