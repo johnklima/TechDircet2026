@@ -8,7 +8,8 @@ Team:
 
  Ana Guzina - assets etc.
 
- Martin Helgerud ??
+ Martin Helgerud - Models/Textures (Hard-surface preferably), can also help in other fields if needed (Sound design with FMOD, Level design)
+
  Jørgen Tjernslien ??
 
  Adrian Jakobsen - models textures vfx animations
