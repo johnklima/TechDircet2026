@@ -9,6 +9,8 @@ public class ShipController : MonoBehaviour
     public Transform VertThruster;
     public Transform RightThruster;
     public Transform LeftThruster;
+    public Transform ForwardThruster;
+    public Transform BackThruster;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -50,13 +52,14 @@ public class ShipController : MonoBehaviour
 
         //(Bia) adding if statements for forward and backwards thrust
         // up arrow and down arrow used since wasd is for vertical movement
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        //GetKey is better than GetKeyDown for thruster
+        if (Input.GetKey(KeyCode.UpArrow))
             { 
                 TF = ThrustForce;
                 keyIsPressed = true;
             }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow))
             {
                 TB = ThrustForce;
                 keyIsPressed = true;
@@ -116,19 +119,21 @@ public class ShipController : MonoBehaviour
         if (TF > 0.0f)
         {
             Debug.Log("forward movement");
+            ForwardThruster.localScale = new Vector3(ForwardThruster.localScale.x, 2.0f, ForwardThruster.localScale.z);
         }
         else if (keyIsPressed == false)
         {
-
+            ForwardThruster.localScale = new Vector3(ForwardThruster.localScale.x, normalY, ForwardThruster.localScale.z);
         }
 
         if (TB > 0.0f) 
         {
             Debug.Log("Backwards movement");
+            BackThruster.localScale = new Vector3(BackThruster.localScale.x, 2.0f, BackThruster.localScale.z);
         }
         else if (keyIsPressed == false)
         {
-
+            BackThruster.localScale = new Vector3(BackThruster.localScale.x, normalY, BackThruster.localScale.z);
         }
     }
 }
