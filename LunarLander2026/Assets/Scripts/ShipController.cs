@@ -23,7 +23,8 @@ public class ShipController : MonoBehaviour
         float TL = 0;
         float TR = 0;
         float TU = 0;
-
+        float TF = 0;
+        float TB = 0;
 
         bool keyIsPressed = false;
 
@@ -46,6 +47,20 @@ public class ShipController : MonoBehaviour
             TR = ThrustForce;
             keyIsPressed = true;
         }
+
+        //(Bia) adding if statements for forward and backwards thrust
+        // up arrow and down arrow used since wasd is for vertical movement
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+            { 
+                TF = ThrustForce;
+                keyIsPressed = true;
+            }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                TB = ThrustForce;
+                keyIsPressed = true;
+            }
 
         ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU;
 
@@ -97,5 +112,23 @@ public class ShipController : MonoBehaviour
             transform.rotation = normalRotation;
         }
 
+        //(BIA) forward and backwarrds thrust
+        if (TF > 0.0f)
+        {
+            Debug.Log("forward movement");
+        }
+        else if (keyIsPressed == false)
+        {
+
+        }
+
+        if (TB > 0.0f) 
+        {
+            Debug.Log("Backwards movement");
+        }
+        else if (keyIsPressed == false)
+        {
+
+        }
     }
 }
