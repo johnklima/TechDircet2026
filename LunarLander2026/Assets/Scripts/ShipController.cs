@@ -62,7 +62,7 @@ public class ShipController : MonoBehaviour
                 keyIsPressed = true;
             }
 
-        ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU;
+        ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU + Vector3.forward * TF + Vector3.back * TB;
 
         float normalY = 1.0f;
         Quaternion normalRotation = Quaternion.identity;
