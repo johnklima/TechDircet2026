@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallGravity : MonoBehaviour
+public class BallGravityOld : MonoBehaviour
 {
 
     //gravity in meters per second per second
@@ -16,14 +16,11 @@ public class BallGravity : MonoBehaviour
 
     public float mass = 1.0f;
 
-    public float SurfaceHeight = 0;
+    public float height = 0;
 
     public Vector3 impulse = new Vector3(0, 0, 0);
 
     public float timeScalar = 1.0f;
-
-    public Vector3 HitVelocity = new Vector3(0, 0, 0);
-
 
     // Start is called before the first frame update
     void Start()
@@ -59,19 +56,8 @@ public class BallGravity : MonoBehaviour
         //move the object
         transform.position += velocity * forceDeltaTime;
 
-        if (transform.position.y < SurfaceHeight)
+        if (transform.position.y < height)
         {
-            if(HitVelocity.magnitude == 0)
-            {
-                HitVelocity = velocity;
-                if (HitVelocity.magnitude > 1.5f)
-                    Debug.Log("BOOOOM!! " + HitVelocity.ToString());
-                else
-                    Debug.Log("LANDED!!! " + HitVelocity.ToString());
-
-            }
-                
-            
             transform.position = curPos;       //hard reset to the surface
             acceleration *= 0;
             velocity *= 0;
