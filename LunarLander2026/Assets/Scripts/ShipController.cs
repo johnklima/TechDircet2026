@@ -23,6 +23,8 @@ public class ShipController : MonoBehaviour
         float TL = 0;
         float TR = 0;
         float TU = 0;
+        float TF = 0;
+        float TB = 0;
 
 
         bool keyIsPressed = false;
@@ -47,7 +49,25 @@ public class ShipController : MonoBehaviour
             keyIsPressed = true;
         }
 
-        ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU;
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+
+            TF = ThrustForce;
+            keyIsPressed = true;
+        }
+
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+
+            TB = ThrustForce;
+            keyIsPressed = true;
+        }
+
+
+
+        //ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU;
+        ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU + Vector3.forward * TF + Vector3.back * TB;
 
         float normalY = 1.0f;
         Quaternion normalRotation = Quaternion.identity;
