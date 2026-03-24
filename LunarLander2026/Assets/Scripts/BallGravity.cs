@@ -17,6 +17,7 @@ public class BallGravity : MonoBehaviour
     public float mass = 1.0f;
 
     public float SurfaceHeight = 0;
+    public float CurrentHeight;
 
     public Vector3 impulse = new Vector3(0, 0, 0);
 
@@ -24,7 +25,7 @@ public class BallGravity : MonoBehaviour
 
     public Vector3 HitVelocity = new Vector3(0, 0, 0);
 
-
+    public Transform Rubenship;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,13 +33,16 @@ public class BallGravity : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         handleMovement();
     }
 
     void handleMovement()
     {
+
+        
+
 
         //set the rate of integration, which is (almost) equivalent to
         //explosion by mass for impulse calc. problem is, gravity
@@ -58,16 +62,35 @@ public class BallGravity : MonoBehaviour
 
         //move the object
         transform.position += velocity * forceDeltaTime;
-
-        if (transform.position.y < SurfaceHeight)
+        
+        RaycastHit hit;
+        string hitname = "";
+        if (Physics.Raycast(transform.position, -Vector3.up, out hit, 1000.0f))
         {
+            CurrentHeight = hit.distance;
+            hitname = hit.transform.name;
+           
+        }
+            
+
+        if (CurrentHeight < SurfaceHeight)
+        {
+            Debug.Log("landed on " + hitname);
+
             if(HitVelocity.magnitude == 0)
             {
                 HitVelocity = velocity;
-                if (HitVelocity.magnitude > 1.5f)
-                    Debug.Log("BOOOOM!! " + HitVelocity.ToString());
+                float mag = HitVelocity.magnitude;
+                if (mag > 2.0f)
+                {
+                    Rubenship.GetComponent<ExplodeShip>().explode = true;
+                    Debug.Log("BOOOOM!! " + mag);
+                }                    
                 else
-                    Debug.Log("LANDED!!! " + HitVelocity.ToString());
+                {
+                    Debug.Log("LANDED!!! " + mag);
+                }
+                    
 
             }
                 
@@ -78,6 +101,7 @@ public class BallGravity : MonoBehaviour
 
         }
 
+        
 
         //reset impulse
         impulse *= 0;

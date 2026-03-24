@@ -12,15 +12,20 @@ public class ShipController : MonoBehaviour
     public Transform ForwardThruster;
     public Transform BackThruster;
 
+    public float Consumption;
+    public float FuelCapacity = 4.0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Consumption = 0;   
     }
 
     // Update is called once per frame
     void Update()
     {
+
+       
 
         float TL = 0;
         float TR = 0;
@@ -30,17 +35,25 @@ public class ShipController : MonoBehaviour
 
         bool keyIsPressed = false;
 
+        if (Consumption > FuelCapacity)
+        {
+            ShipPhysics.thrust = Vector3.zero;
+            return;
+        }
+            
+
         if (Input.GetKey(KeyCode.W))
         {
             TU = ThrustForce;
             keyIsPressed = true;
-
+            Consumption += Time.deltaTime;
 
         }
         if (Input.GetKey(KeyCode.A))
         {
             TL = ThrustForce;
             keyIsPressed = true;
+            Consumption += Time.deltaTime;
         }
         
         if (Input.GetKey(KeyCode.D))
@@ -48,29 +61,32 @@ public class ShipController : MonoBehaviour
 
             TR = ThrustForce;
             keyIsPressed = true;
+            Consumption += Time.deltaTime;
         }
 
         //(Bia) adding if statements for forward and backwards thrust
         // up arrow and down arrow used since wasd is for vertical movement
         //GetKey is better than GetKeyDown for thruster
         if (Input.GetKey(KeyCode.UpArrow))
-            { 
-                TF = ThrustForce;
-                keyIsPressed = true;
-            }
+        { 
+            TF = ThrustForce;
+            keyIsPressed = true;
+            Consumption += Time.deltaTime;
+        }
 
         if (Input.GetKey(KeyCode.DownArrow))
-            {
-                TB = ThrustForce;
-                keyIsPressed = true;
-            }
+        {
+            TB = ThrustForce;
+            keyIsPressed = true;
+            Consumption += Time.deltaTime;
+        }
 
         ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU + Vector3.forward * TF + Vector3.back * TB;
 
         float normalY = 1.0f;
         Quaternion normalRotation = Quaternion.identity;
-        Quaternion rightRotation = Quaternion.Euler(0, 0, -10.0f);
-        Quaternion leftRotation = Quaternion.Euler(0, 0, 10.0f);
+        Quaternion rightRotation = Quaternion.identity; //Quaternion.Euler(0, 0, -10.0f);
+        Quaternion leftRotation = Quaternion.identity; //Quaternion.Euler(0, 0, 10.0f);
 
         if (TU > 0.0f)
         {
@@ -89,7 +105,7 @@ public class ShipController : MonoBehaviour
         {
             //thrust vfx here
             //play a sound here
-            Debug.Log("HELLOOOOOO LEFt");
+            
             LeftThruster.localScale = new Vector3(LeftThruster.localScale.x, 2.0f, LeftThruster.localScale.z);
             transform.rotation = leftRotation;
 
