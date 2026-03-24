@@ -9,6 +9,8 @@ public class ShipController : MonoBehaviour
     public Transform VertThruster;
     public Transform RightThruster;
     public Transform LeftThruster;
+    public Transform ForwardThruster;
+    public Transform BackThruster;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,7 +27,6 @@ public class ShipController : MonoBehaviour
         float TU = 0;
         float TF = 0;
         float TB = 0;
-
 
         bool keyIsPressed = false;
 
@@ -49,24 +50,21 @@ public class ShipController : MonoBehaviour
             keyIsPressed = true;
         }
 
+        //(Bia) adding if statements for forward and backwards thrust
+        // up arrow and down arrow used since wasd is for vertical movement
+        //GetKey is better than GetKeyDown for thruster
         if (Input.GetKey(KeyCode.UpArrow))
-        {
-
-            TF = ThrustForce;
-            keyIsPressed = true;
-        }
-
+            { 
+                TF = ThrustForce;
+                keyIsPressed = true;
+            }
 
         if (Input.GetKey(KeyCode.DownArrow))
-        {
+            {
+                TB = ThrustForce;
+                keyIsPressed = true;
+            }
 
-            TB = ThrustForce;
-            keyIsPressed = true;
-        }
-
-
-
-        //ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU;
         ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU + Vector3.forward * TF + Vector3.back * TB;
 
         float normalY = 1.0f;
@@ -117,5 +115,25 @@ public class ShipController : MonoBehaviour
             transform.rotation = normalRotation;
         }
 
+        //(BIA) forward and backwarrds thrust
+        if (TF > 0.0f)
+        {
+            Debug.Log("forward movement");
+            ForwardThruster.localScale = new Vector3(ForwardThruster.localScale.x, 2.0f, ForwardThruster.localScale.z);
+        }
+        else if (keyIsPressed == false)
+        {
+            ForwardThruster.localScale = new Vector3(ForwardThruster.localScale.x, normalY, ForwardThruster.localScale.z);
+        }
+
+        if (TB > 0.0f) 
+        {
+            Debug.Log("Backwards movement");
+            BackThruster.localScale = new Vector3(BackThruster.localScale.x, 2.0f, BackThruster.localScale.z);
+        }
+        else if (keyIsPressed == false)
+        {
+            BackThruster.localScale = new Vector3(BackThruster.localScale.x, normalY, BackThruster.localScale.z);
+        }
     }
 }
