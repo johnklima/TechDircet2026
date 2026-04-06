@@ -258,6 +258,7 @@ GameObject:
   - component: {fileID: 326511824}
   - component: {fileID: 326511823}
   - component: {fileID: 326511822}
+  - component: {fileID: 326511826}
   m_Layer: 0
   m_Name: COW
   m_TagString: Untagged
@@ -358,6 +359,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &326511826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326511821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11490fd0a49841a4bb10b7f7a4061d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GamepadInput
+  leftStick: {x: 0, y: 0}
+  rightStick: {x: 0, y: 0}
+  leftTrigger: 0
+  rightTrigger: 0
+  anyDpad: 0
 --- !u!1 &505702789
 GameObject:
   m_ObjectHideFlags: 0
