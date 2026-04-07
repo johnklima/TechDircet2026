@@ -1,0 +1,14 @@
+﻿<Solution>
+  <Project Path="MTE_script.csproj" />
+  <Project Path="Unity.RenderPipelines.Core.Samples.Runtime.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="FMODUnityResonanceEditor.csproj" />
+  <Project Path="VFXGraph.OutputEventHandlers.Editor.csproj" />
+  <Project Path="FMODUnityEditor.csproj" />
+  <Project Path="FMODUnity.csproj" />
+  <Project Path="FMODUnityHaptics.csproj" />
+  <Project Path="VFXGraph.OutputEventHandlers.csproj" />
+  <Project Path="Unity.RenderPipelines.Core.Samples.Editor.csproj" />
+  <Project Path="FMODUnityResonance.csproj" />
+</Solution>
