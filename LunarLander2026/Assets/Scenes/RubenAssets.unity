@@ -3452,6 +3452,10 @@ PrefabInstance:
       propertyPath: FuelCapacity
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8319440579163248175, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6433557120929415835, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
     - {fileID: 2019174997901274758, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
