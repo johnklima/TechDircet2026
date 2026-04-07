@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShipController : MonoBehaviour
 {
@@ -13,7 +14,10 @@ public class ShipController : MonoBehaviour
     public Transform BackThruster;
 
     public float Consumption;
-    public float FuelCapacity = 4.0f;
+    public float FuelCapacity = 3.0f;
+    public Text FuelPercentText;
+    public float FuelPercent;
+    public Scrollbar Fuelscroll;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,7 +29,10 @@ public class ShipController : MonoBehaviour
     void Update()
     {
 
-       
+        FuelPercent = ( Consumption / FuelCapacity);
+
+        FuelPercentText.text = " Percent: " + FuelPercent.ToString() ;
+        Fuelscroll.size = FuelPercent;
 
         float TL = 0;
         float TR = 0;
