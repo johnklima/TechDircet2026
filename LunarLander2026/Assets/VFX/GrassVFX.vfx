@@ -3737,7 +3737,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614717}
   m_OutputSlots:
   - {fileID: 8926484042661614718}
-  type: 1
+  type: 0
   dimensions: 1
 --- !u!114 &8926484042661614709
 MonoBehaviour:
