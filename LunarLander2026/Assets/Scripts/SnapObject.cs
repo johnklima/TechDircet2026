@@ -9,8 +9,7 @@ public class SnapObject : MonoBehaviour
         {
             RaycastHit hit;
             if(Physics.Raycast(child.position, Vector3.down, out hit))
-            {
-                
+            {                
                 child.position = hit.point;
             }
 
