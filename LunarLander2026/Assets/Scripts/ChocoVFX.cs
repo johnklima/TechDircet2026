@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.VFX;
 
@@ -19,15 +20,16 @@ public class ChocoVFX : MonoBehaviour
         gas.Reinit();
         choco.pause = false;
         gas.pause = false;
-        StartCoroutine(stopVfx());
+        StartCoroutine(stopVfx(choco, 1));
+        StartCoroutine(stopVfx(gas, 1.5f));
 
     }
-    IEnumerator stopVfx()
+    IEnumerator stopVfx(VisualEffect effect, float time)
     {       
 
-        yield return new WaitForSeconds(1);
-        choco.pause = true;
-        gas.pause = true;
+        yield return new WaitForSeconds(time);
+        effect.pause = true;
+    
 
     }
 
