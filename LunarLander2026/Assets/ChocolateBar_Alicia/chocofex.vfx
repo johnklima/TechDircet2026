@@ -19,7 +19,7 @@ MonoBehaviour:
       x: -340
       y: 192
       width: 1763
-      height: 2188
+      height: 2326
     contents:
     - model: {fileID: 8926484042661614700}
       id: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
     x: -340
     y: 192
     width: 1763
-    height: 2188
+    height: 2210
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: ChocVFX
+  m_Name: chocofex
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
@@ -162,7 +162,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ChocVFX
+  m_Name: chocofex
   m_Graph: {fileID: 114350483966674976}
   m_Infos:
     m_RendererSettings:
@@ -1587,12 +1587,12 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8926484042661615101}
   - {fileID: 8926484042661615135}
-  m_UIPosition: {x: 341, y: 1780}
+  m_UIPosition: {x: 22, y: 1839}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
   - {fileID: 8926484042661615147}
-  - {fileID: 8926484042661615155}
+  - {fileID: 8926484042661615153}
   m_OutputSlots: []
   m_Label: Render Quad Classic Blend
   m_Data: {fileID: 8926484042661614721}
@@ -1759,7 +1759,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615138}
   - {fileID: 8926484042661615139}
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 0
+  m_UICollapsed: 1
   m_UISuperCollapsed: 0
   m_MasterSlot: {fileID: 8926484042661615136}
   m_MasterData:
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
---- !u!114 &8926484042661615155
+--- !u!114 &8926484042661615153
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2014,7 +2014,7 @@ MonoBehaviour:
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 8926484042661615155}
+  m_MasterSlot: {fileID: 8926484042661615153}
   m_MasterData:
     m_Owner: {fileID: 8926484042661615097}
     m_Value:
