@@ -26,6 +26,7 @@ public class BallGravity : MonoBehaviour
     public Vector3 HitVelocity = new Vector3(0, 0, 0);
 
     public Transform Rubenship;
+    public ChocoVFX choco;
     // Start is called before the first frame update
     void Start()
     {
@@ -88,10 +89,11 @@ public class BallGravity : MonoBehaviour
                     Debug.Log("landed on " + hitname);
                     Rubenship.GetComponent<ExplodeShip>().explode = true;
                     Debug.Log("BOOOOM!! " + mag);
+                    choco.PlayChoco();
+
                 }                    
                 else
                 {
-
                     Debug.Log("landed on " + hitname);
                     Debug.Log("LANDED!!! " + mag);
                 }
