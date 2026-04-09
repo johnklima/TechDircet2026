@@ -75,19 +75,24 @@ public class BallGravity : MonoBehaviour
 
         if (CurrentHeight < SurfaceHeight)
         {
-            Debug.Log("landed on " + hitname);
+           
 
             if(HitVelocity.magnitude == 0)
             {
+
                 HitVelocity = velocity;
                 float mag = HitVelocity.magnitude;
                 if (mag > 2.0f)
                 {
+
+                    Debug.Log("landed on " + hitname);
                     Rubenship.GetComponent<ExplodeShip>().explode = true;
                     Debug.Log("BOOOOM!! " + mag);
                 }                    
                 else
                 {
+
+                    Debug.Log("landed on " + hitname);
                     Debug.Log("LANDED!!! " + mag);
                 }
                     

@@ -14,16 +14,9 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Camera.main.transform.RotateAround(Target.position, Camera.main.transform.right, Input.GetAxis("Mouse Y"));
+        Camera.main.transform.RotateAround(Target.position, Vector3.up, -Input.GetAxis("Mouse X"));
     }
-    private void FixedUpdate()
-    {
-        if (Input.GetKey(KeyCode.Mouse1))
-        {
-            Camera.main.transform.RotateAround(Target.position, Camera.main.transform.right, Input.GetAxis("Mouse Y"));
-            Camera.main.transform.RotateAround(Target.position, Vector3.up, -Input.GetAxis("Mouse X"));
-        }
-        return;
-    }
+
 
 }
