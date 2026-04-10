@@ -37,19 +37,16 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Green
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 759943eb71e116e4bbf51aae175ba2a7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
-  - _NORMALMAP_TANGENT_SPACE
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -124,6 +121,22 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _LavaNormal:
+        m_Texture: {fileID: 2800000, guid: 916c270d6f104254faad8bd94c227304, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LavaTex:
+        m_Texture: {fileID: 2800000, guid: c9cddf36de4a01542866d59e7b126154, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MagmaNormal:
+        m_Texture: {fileID: 2800000, guid: 7e9632878e287e24799a9afcb174c063, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MagmaTex:
+        m_Texture: {fileID: 2800000, guid: f4e37c10131f1494888bc3ddcb7b87f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -150,6 +163,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_121950326a7b4902846b1e9250cb2687_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 69f6a64506a29eb4b84b62e0503187ad, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -218,6 +235,7 @@ Material:
     - _Blend: 0
     - _BlendMode: 0
     - _BlendModePreserveSpecular: 1
+    - _BottomPower: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -251,6 +269,7 @@ Material:
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
     - _EnvironmentReflections: 1
+    - _Frenselpower: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -273,8 +292,11 @@ Material:
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _Mode: 0
+    - _NoiseAmount: 0.5
+    - _NoiseScale: 30
     - _NormalMapSpace: 0
     - _NormalScale: 1
+    - _Normal_Strength: 8
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
     - _OcclusionStrength: 1
@@ -285,6 +307,8 @@ Material:
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
     - _Parallax: 0.02
+    - _Power: 2
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _RayTracing: 0
     - _ReceiveShadows: 1
@@ -331,6 +355,9 @@ Material:
     - _UVSec: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
+    - _VoronoiAO: 2
+    - _VoronoiAmount: 0.05
+    - _VoronoiScale: 5
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
     - _ZTestDepthEqualForOpaque: 3
@@ -340,14 +367,24 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.3825907, g: 0.82547176, b: 0.13238692, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
+    - _BottomRemap: {r: 0, g: 1, b: 0, a: 0}
     - _Color: {r: 0.38259068, g: 0.82547176, b: 0.1323869, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 0}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _LavaColor: {r: 1, g: 0.160162, b: 0, a: 0}
+    - _LavaNormalSpeed: {r: 0, g: 0.1, b: 0, a: 0}
+    - _LavaScale: {r: 2, g: 2, b: 0, a: 0}
+    - _LavaScaleNormal: {r: 4, g: 4, b: 0, a: 0}
+    - _LavaSpeed: {r: 0.2, g: 0.2, b: 0, a: 0}
+    - _Lavaremap: {r: 0, g: 1, b: 0, a: 0}
+    - _MagmaScale: {r: 2, g: 2, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0.05, g: 0.05, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
@@ -355,5 +392,6 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
+    - _VoronoiSpeed: {r: 0, g: 0.01, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
