@@ -377,7 +377,7 @@ Material:
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 0}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _LavaColor: {r: 1, g: 0.160162, b: 0, a: 0}
+    - _LavaColor: {r: 1.3041573, g: 4.1812453, b: 0.13806006, a: 0}
     - _LavaNormalSpeed: {r: 0, g: 0.1, b: 0, a: 0}
     - _LavaScale: {r: 2, g: 2, b: 0, a: 0}
     - _LavaScaleNormal: {r: 4, g: 4, b: 0, a: 0}
