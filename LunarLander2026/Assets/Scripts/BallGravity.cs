@@ -105,9 +105,18 @@ public class BallGravity : MonoBehaviour
                 }                    
                 else
                 {
-                    //reset lander, or give fuel to move to next platform
+                    //reset lander on ground
                     Debug.Log("landed on " + hitname);
                     Debug.Log("LANDED!!! " + mag);
+
+                    if(hit.transform.tag == "Platform")
+                    {
+                        //refuel ship
+                        transform.GetComponent<ShipController>().FuelCapacity += 10.0f ;
+                        transform.GetComponent<ShipController>().Consumption = 0.0f;
+
+                    }
+
                 }
                     
 

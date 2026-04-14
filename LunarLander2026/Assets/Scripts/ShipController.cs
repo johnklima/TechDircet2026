@@ -31,8 +31,14 @@ public class ShipController : MonoBehaviour
 
         FuelPercent = ( Consumption / FuelCapacity);
 
-        FuelPercentText.text = " Percent: " + FuelPercent.ToString() ;
-        Fuelscroll.size = FuelPercent;
+
+        if(Fuelscroll)
+        {
+            FuelPercentText.text = " Percent: " + FuelPercent.ToString();
+            Fuelscroll.size = FuelPercent;
+
+        }
+
 
         float TL = 0;
         float TR = 0;
