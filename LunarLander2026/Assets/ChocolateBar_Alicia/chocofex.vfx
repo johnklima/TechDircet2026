@@ -2015,7 +2015,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2DArray, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":18700000,"guid":"afd224c8ca6677d42bb8106e6fd3533d","type":2}}'
+      m_SerializableObject: '{"obj":{"fileID":18700000,"guid":"c125b25d2cb5d6a4d8fd8cdcb8902c7a","type":2}}'
     m_Space: -1
   m_Property:
     name: mainTexture
