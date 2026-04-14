@@ -25,8 +25,8 @@ public class BallGravity : MonoBehaviour
 
     public Vector3 HitVelocity = new Vector3(0, 0, 0);
 
-    public Transform Rubenship;
-    public ChocoVFX choco;
+    public Transform ShipGeom;
+    
 
     public bool InertialDampnerXZ = true;
     public float DampnFactor = 0.5f;
@@ -97,15 +97,15 @@ public class BallGravity : MonoBehaviour
                 float mag = HitVelocity.magnitude;
                 if (mag > 2.0f)
                 {
-
+                    //do something game over, reload entire scene
                     Debug.Log("landed on " + hitname);
-                    Rubenship.GetComponent<ExplodeShip>().explode = true;
+                    ShipGeom.GetComponent<ExplodeShip>().explode = true;
                     Debug.Log("BOOOOM!! " + mag);
-                    choco.PlayChoco();
-
+                    
                 }                    
                 else
                 {
+                    //reset lander, or give fuel to move to next platform
                     Debug.Log("landed on " + hitname);
                     Debug.Log("LANDED!!! " + mag);
                 }
