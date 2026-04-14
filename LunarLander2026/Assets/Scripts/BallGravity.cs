@@ -29,6 +29,8 @@ public class BallGravity : MonoBehaviour
     public ChocoVFX choco;
 
     public bool InertialDampnerXZ = true;
+    public float DampnFactor = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,12 +73,12 @@ public class BallGravity : MonoBehaviour
         {
             
             float y = velocity.y;
-            velocity = Vector3.Lerp(velocity,new Vector3(0,y,0), Time.deltaTime);
+            velocity = Vector3.Lerp(velocity,new Vector3(0,y,0), Time.deltaTime * DampnFactor);
         }
 
         RaycastHit hit;
         string hitname = "";
-        if (Physics.Raycast(transform.position, -Vector3.up, out hit, 1000.0f))
+        if (Physics.Raycast(transform.position, -Vector3.up, out hit, 10000.0f))
         {
             CurrentHeight = hit.distance;
             hitname = hit.transform.name;
