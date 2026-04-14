@@ -1,25 +1,28 @@
-
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class ExplodeShip : MonoBehaviour
 {
 
     public bool explode = false;
 
+    //vfx for explosion goes here (Bia)
+    public VisualEffect ExplosionVFX;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        
+        ExplosionVFX.pause = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(explode)
+        if (explode)
         {
             explode = false;
 
-            foreach(Transform shippart in transform)
+            foreach (Transform shippart in transform)
             {
                 float x = Random.Range(-10.0f, 10.0f);
                 float y = Random.Range(-10.0f, 10.0f);
@@ -28,9 +31,19 @@ public class ExplodeShip : MonoBehaviour
 
                 shippart.GetComponent<BallGravity>().enabled = true;
                 shippart.GetComponent<BallGravity>().impulse = impulse;
+
+                //in addition to above call on event to handle Vfx explosion (Bia)
+                ExplosionEffects();
             }
 
         }
-        
+
+    }
+
+    void ExplosionEffects()
+    {
+        //reseting the visual effect and unpause it (Bia)
+        ExplosionVFX.Reinit();
+        ExplosionVFX.pause = false;
     }
 }
