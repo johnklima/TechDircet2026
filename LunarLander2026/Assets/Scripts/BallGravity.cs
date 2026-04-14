@@ -27,6 +27,8 @@ public class BallGravity : MonoBehaviour
 
     public Transform Rubenship;
     public ChocoVFX choco;
+
+    public bool InertialDampnerXZ = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,7 +65,15 @@ public class BallGravity : MonoBehaviour
 
         //move the object
         transform.position += velocity * forceDeltaTime;
-        
+
+        //dampner
+        if (InertialDampnerXZ)
+        {
+            
+            float y = velocity.y;
+            velocity = Vector3.Lerp(velocity,new Vector3(0,y,0), Time.deltaTime);
+        }
+
         RaycastHit hit;
         string hitname = "";
         if (Physics.Raycast(transform.position, -Vector3.up, out hit, 1000.0f))

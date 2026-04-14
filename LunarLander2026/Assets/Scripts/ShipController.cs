@@ -49,7 +49,7 @@ public class ShipController : MonoBehaviour
         }
             
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.Space))
         {
             TU = ThrustForce;
             keyIsPressed = true;
@@ -74,14 +74,14 @@ public class ShipController : MonoBehaviour
         //(Bia) adding if statements for forward and backwards thrust
         // up arrow and down arrow used since wasd is for vertical movement
         //GetKey is better than GetKeyDown for thruster
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         { 
             TF = ThrustForce;
             keyIsPressed = true;
             Consumption += Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             TB = ThrustForce;
             keyIsPressed = true;
