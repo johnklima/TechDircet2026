@@ -82,6 +82,8 @@ public class BallGravity : MonoBehaviour
         {
             CurrentHeight = hit.distance;
             hitname = hit.transform.name;
+
+          
            
         }
             

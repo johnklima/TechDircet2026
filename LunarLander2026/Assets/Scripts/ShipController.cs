@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.VFX;
 
 public class ShipController : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class ShipController : MonoBehaviour
     public Transform ForwardThruster;
     public Transform BackThruster;
 
+    public VisualEffect rocket;
+
     public float Consumption;
     public float FuelCapacity = 3.0f;
     public Text FuelPercentText;
@@ -22,19 +25,22 @@ public class ShipController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Consumption = 0;   
+        Consumption = 0;
+        rocket.SetFloat("Spawn Rate", 0);
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        
+
         FuelPercent = ( Consumption / FuelCapacity);
 
 
         if(Fuelscroll)
         {
-            FuelPercentText.text = " Percent: " + FuelPercent.ToString();
+            //FuelPercentText.text = " Percent: " + FuelPercent.ToString();
             Fuelscroll.size = FuelPercent;
 
         }
@@ -51,6 +57,7 @@ public class ShipController : MonoBehaviour
         if (Consumption > FuelCapacity)
         {
             ShipPhysics.thrust = Vector3.zero;
+            rocket.SetFloat("Spawn Rate", 0);
             return;
         }
             
@@ -95,6 +102,15 @@ public class ShipController : MonoBehaviour
         }
 
         ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU + Vector3.forward * TF + Vector3.back * TB;
+
+        if(keyIsPressed)
+        {
+            rocket.SetFloat("Spawn Rate", 3);
+        }
+        else
+        {
+            rocket.SetFloat("Spawn Rate", 0);
+        }
 
         float normalY = 1.0f;
         Quaternion normalRotation = Quaternion.identity;
