@@ -1199,11 +1199,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5636889441111845142, guid: 6c372d254da865f44a25e4110538ca27, type: 3}
       propertyPath: simulationSpeed
-      value: 0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5636889441111845142, guid: 6c372d254da865f44a25e4110538ca27, type: 3}
       propertyPath: InitialModule.maxNumParticles
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 8362403010965409160, guid: 6c372d254da865f44a25e4110538ca27, type: 3}
       propertyPath: m_Name
@@ -1268,7 +1268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334352264284554814, guid: e50969710a4eaa445b0909fabc396cfa, type: 3}
       propertyPath: simulationSpeed
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8334352264284554814, guid: e50969710a4eaa445b0909fabc396cfa, type: 3}
       propertyPath: InitialModule.maxNumParticles
