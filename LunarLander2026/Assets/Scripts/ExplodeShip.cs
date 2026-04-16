@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.VFX;
 
+
 public class ExplodeShip : MonoBehaviour
 {
 
@@ -8,11 +9,14 @@ public class ExplodeShip : MonoBehaviour
 
     //vfx for explosion goes here (Bia)
     public VisualEffect ExplosionVFX;
+    public ParticleSystem particleSystem;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         ExplosionVFX.pause = true;
+        particleSystem.Stop();
     }
 
     // Update is called once per frame
@@ -45,5 +49,8 @@ public class ExplodeShip : MonoBehaviour
         //reseting the visual effect and unpause it (Bia)
         ExplosionVFX.Reinit();
         ExplosionVFX.pause = false;
+
+        particleSystem.Play();
+
     }
 }
