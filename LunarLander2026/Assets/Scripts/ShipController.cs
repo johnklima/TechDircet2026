@@ -113,7 +113,7 @@ public class ShipController : MonoBehaviour
         {
             //play a sound here
 
-            rocket.SetFloat("Spawn Rate", 3);
+            rocket.SetFloat("Spawn Rate", 1024 );
         }
         else
         {
@@ -126,10 +126,10 @@ public class ShipController : MonoBehaviour
         //ship rotations
         float normalY = 1.0f;
         Quaternion normalRotation = Quaternion.identity;
-        Quaternion rightRotation = Quaternion.Euler(0, 0, -20.0f);
-        Quaternion leftRotation = Quaternion.Euler(0, 0, 20.0f);
-        Quaternion forwardRotation = Quaternion.Euler(20.0f, 0, 0);
-        Quaternion backwardRotation = Quaternion.Euler(-20.0f, 0, 0);
+        Quaternion rightRotation = Quaternion.Euler(0, 0, -40.0f);
+        Quaternion leftRotation = Quaternion.Euler(0, 0, 40.0f);
+        Quaternion forwardRotation = Quaternion.Euler(40.0f, 0, 0);
+        Quaternion backwardRotation = Quaternion.Euler(-40.0f, 0, 0);
 
 
         // ship rotation based on thrust.
@@ -138,38 +138,30 @@ public class ShipController : MonoBehaviour
  
         if (TL > 0.0f)
         {
-            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, leftRotation, Time.deltaTime);
+            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, leftRotation, Time.deltaTime );
         }
-        else if ( keyIsPressed == false)
-        {
-
-            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
-        }
+        
 
         if (TR > 0.0f)
         {
             TheShip.rotation = Quaternion.Lerp(TheShip.rotation, rightRotation, Time.deltaTime );
         }
-        else if (keyIsPressed == false)
-        {
-            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
-        }
+        
 
         //(BIA) forward and backwarrds thrust
         if (TF > 0.0f)
         {
             TheShip.rotation = Quaternion.Lerp(TheShip.rotation, forwardRotation, Time.deltaTime);
         }
-        else if (keyIsPressed == false)
-        {
-            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
-        }
+        
 
         if (TB > 0.0f)
         {
             TheShip.rotation = Quaternion.Lerp(TheShip.rotation, backwardRotation, Time.deltaTime);
         }
-        else if (keyIsPressed == false)
+        
+        //restitution
+        if (keyIsPressed == false)
         {
             TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
         }
