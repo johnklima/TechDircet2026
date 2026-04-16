@@ -427,7 +427,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9079071376165589695, guid: 6326a3cbcccc8164aabd3ab56f03f3e2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1343652026}
   m_SourcePrefab: {fileID: 100100000, guid: 6326a3cbcccc8164aabd3ab56f03f3e2, type: 3}
 --- !u!1 &604712593
 GameObject:
@@ -1118,6 +1121,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1343652022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9079071376165589695, guid: 6326a3cbcccc8164aabd3ab56f03f3e2, type: 3}
+  m_PrefabInstance: {fileID: 593461918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1343652026
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343652022}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6099800089077584851, guid: 98dd3860ed4ede44e868d8f06660ca42, type: 3}
 --- !u!1001 &1476000571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1428,6 +1458,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 344669848257229530, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
+      propertyPath: SurfaceHeight
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 344669848257229530, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
+      propertyPath: GRAVITY_CONSTANT
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2403727261884194954, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
       propertyPath: m_Name
       value: Ship
