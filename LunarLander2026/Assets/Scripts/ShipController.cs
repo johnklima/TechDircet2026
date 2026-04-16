@@ -5,20 +5,16 @@ using UnityEngine.VFX;
 public class ShipController : MonoBehaviour
 {
 
+    public Transform TheShip;
     public BallGravity ShipPhysics;
     public float ThrustForce = 2.0f;
 
-    public Transform VertThruster;
-    public Transform RightThruster;
-    public Transform LeftThruster;
-    public Transform ForwardThruster;
-    public Transform BackThruster;
-
+   
     public VisualEffect rocket;
+
 
     public float Consumption;
     public float FuelCapacity = 3.0f;
-    public Text FuelPercentText;
     public float FuelPercent;
     public Scrollbar Fuelscroll;
 
@@ -26,21 +22,24 @@ public class ShipController : MonoBehaviour
     void Start()
     {
         Consumption = 0;
+        
+        //rocket is disabled when in edit mode
+        rocket.gameObject.SetActive(true);
+        //setting spawn rate seems to work best
         rocket.SetFloat("Spawn Rate", 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        
+                
 
         FuelPercent = ( Consumption / FuelCapacity);
 
 
         if(Fuelscroll)
         {
-            //FuelPercentText.text = " Percent: " + FuelPercent.ToString();
+            
             Fuelscroll.size = FuelPercent;
 
         }
@@ -56,12 +55,13 @@ public class ShipController : MonoBehaviour
 
         if (Consumption > FuelCapacity)
         {
+            //out of gas
             ShipPhysics.thrust = Vector3.zero;
             rocket.SetFloat("Spawn Rate", 0);
             return;
         }
             
-
+        //up
         if (Input.GetKey(KeyCode.Space))
         {
             TU = ThrustForce;
@@ -69,13 +69,14 @@ public class ShipController : MonoBehaviour
             Consumption += Time.deltaTime;
 
         }
+        //left
         if (Input.GetKey(KeyCode.A))
         {
             TL = ThrustForce;
             keyIsPressed = true;
             Consumption += Time.deltaTime;
         }
-        
+        //right
         if (Input.GetKey(KeyCode.D))
         {
 
@@ -87,13 +88,16 @@ public class ShipController : MonoBehaviour
         //(Bia) adding if statements for forward and backwards thrust
         // up arrow and down arrow used since wasd is for vertical movement
         //GetKey is better than GetKeyDown for thruster
+        //(John) changed to space bar for up thrust so W/S forward/back
+        
+        //forward
         if (Input.GetKey(KeyCode.W))
         { 
             TF = ThrustForce;
             keyIsPressed = true;
             Consumption += Time.deltaTime;
         }
-
+        //backward
         if (Input.GetKey(KeyCode.S))
         {
             TB = ThrustForce;
@@ -101,84 +105,73 @@ public class ShipController : MonoBehaviour
             Consumption += Time.deltaTime;
         }
 
+        //add the thrust
         ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU + Vector3.forward * TF + Vector3.back * TB;
 
+        //found that spawn rate best for rocket vfx
         if(keyIsPressed)
         {
+            //play a sound here
+
             rocket.SetFloat("Spawn Rate", 3);
         }
         else
         {
+            //stop sound here
+
             rocket.SetFloat("Spawn Rate", 0);
         }
 
+
+        //ship rotations
         float normalY = 1.0f;
         Quaternion normalRotation = Quaternion.identity;
-        Quaternion rightRotation = Quaternion.identity; //Quaternion.Euler(0, 0, -10.0f);
-        Quaternion leftRotation = Quaternion.identity; //Quaternion.Euler(0, 0, 10.0f);
+        Quaternion rightRotation = Quaternion.Euler(0, 0, -20.0f);
+        Quaternion leftRotation = Quaternion.Euler(0, 0, 20.0f);
+        Quaternion forwardRotation = Quaternion.Euler(20.0f, 0, 0);
+        Quaternion backwardRotation = Quaternion.Euler(-20.0f, 0, 0);
 
-        if (TU > 0.0f)
-        {
-            //thrust vfx here
-            //play a sound here
 
-            VertThruster.localScale = new Vector3(VertThruster.localScale.x, 2.0f, VertThruster.localScale.z);
-
-        }
-        else if (keyIsPressed == false)
-        {
-            VertThruster.localScale = new Vector3(VertThruster.localScale.x, normalY, VertThruster.localScale.z);
-        }
-
+        // ship rotation based on thrust.
+        // maybe better to use velocity?
+        // do something with camera?
+ 
         if (TL > 0.0f)
         {
-            //thrust vfx here
-            //play a sound here
-            
-            LeftThruster.localScale = new Vector3(LeftThruster.localScale.x, 2.0f, LeftThruster.localScale.z);
-            transform.rotation = leftRotation;
-
+            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, leftRotation, Time.deltaTime);
         }
-        else if (keyIsPressed == false)
+        else if ( keyIsPressed == false)
         {
-            LeftThruster.localScale = new Vector3(LeftThruster.localScale.x, normalY, LeftThruster.localScale.z);
-            transform.rotation = normalRotation;
+
+            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
         }
 
         if (TR > 0.0f)
         {
-            //thrust vfx here
-            //play a sound here
-
-            RightThruster.localScale = new Vector3(RightThruster.localScale.x, 2.0f, RightThruster.localScale.z);
-            transform.rotation = rightRotation;
-
+            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, rightRotation, Time.deltaTime );
         }
         else if (keyIsPressed == false)
         {
-            RightThruster.localScale = new Vector3(RightThruster.localScale.x, normalY, RightThruster.localScale.z);
-            transform.rotation = normalRotation;
+            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
         }
 
         //(BIA) forward and backwarrds thrust
         if (TF > 0.0f)
         {
-            Debug.Log("forward movement");
-            ForwardThruster.localScale = new Vector3(ForwardThruster.localScale.x, 2.0f, ForwardThruster.localScale.z);
+            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, forwardRotation, Time.deltaTime);
         }
         else if (keyIsPressed == false)
         {
-            ForwardThruster.localScale = new Vector3(ForwardThruster.localScale.x, normalY, ForwardThruster.localScale.z);
+            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
         }
 
-        if (TB > 0.0f) 
+        if (TB > 0.0f)
         {
-            Debug.Log("Backwards movement");
-            BackThruster.localScale = new Vector3(BackThruster.localScale.x, 2.0f, BackThruster.localScale.z);
+            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, backwardRotation, Time.deltaTime);
         }
         else if (keyIsPressed == false)
         {
-            BackThruster.localScale = new Vector3(BackThruster.localScale.x, normalY, BackThruster.localScale.z);
+            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
         }
     }
 }
