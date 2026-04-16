@@ -31,6 +31,9 @@ public class BallGravity : MonoBehaviour
     public bool InertialDampnerXZ = true;
     public float DampnFactor = 0.5f;
 
+    public Vector3 angAcceleration;
+    public Vector3 AngularVelocity;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +49,10 @@ public class BallGravity : MonoBehaviour
     void handleMovement()
     {
 
-        
+         
+         //I generally do rotation first, translation second
+         AngularVelocity += angAcceleration * Time.deltaTime * Time.deltaTime;   
+         transform.rotation *= Quaternion.Euler(AngularVelocity);
 
 
         //set the rate of integration, which is (almost) equivalent to
