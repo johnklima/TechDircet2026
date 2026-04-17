@@ -35759,7 +35759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3974420552296745823, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5190029980142284600, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
       propertyPath: Fuelscroll
@@ -35783,7 +35783,7 @@ PrefabInstance:
       objectReference: {fileID: 340069927}
     - target: {fileID: 8962720318232276788, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
