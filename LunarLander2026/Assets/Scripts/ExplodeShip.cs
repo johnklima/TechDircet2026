@@ -36,11 +36,11 @@ public class ExplodeShip : MonoBehaviour
                 shippart.GetComponent<BallGravity>().enabled = true;
                 shippart.GetComponent<BallGravity>().impulse = impulse;
                 shippart.GetComponent<BallGravity>().angAcceleration = impulse * 50.0f;
-
-                //in addition to above call on event to handle Vfx explosion (Bia)
-                ExplosionEffects();
+               
             }
 
+            //in addition to above call on event to handle Vfx explosion (Bia)
+            ExplosionEffects();
         }
 
     }
