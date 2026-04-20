@@ -47,12 +47,29 @@ public class ExplodeShip : MonoBehaviour
 
             
             Debug.Log("timer start");
-            Invoke("ExplosionResetScene", 2 );
+
+            StartCoroutine("ExplosionResetScene", 3);  // wait 3 seconds and reload the same scene.
+
+            //nope
+            //Invoke("ExplosionResetScene", 2 );
 
             //Also stop Coroutine for ship controls to keep them still (Bia)
-            StopCoroutine("");
+            //StopCoroutine("");
+            //nope
         }
 
+    }
+
+
+    IEnumerator ExplosionResetScene(float seconds)
+    {
+        //dont do nuthin until seconds have expired
+        yield return new WaitForSeconds(seconds);
+
+        //now reload the same scene because we crashed
+        Debug.Log("Reset done");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
     }
 
     void ExplosionEffects()
@@ -63,13 +80,5 @@ public class ExplodeShip : MonoBehaviour
 
         particleSystem.Play();
 
-    }
-
-    void  ExplosionResetScene()
-    {
-        //yield return new WaitForSeconds(6f);
-        Debug.Log("Reset done");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        
     }
 }
