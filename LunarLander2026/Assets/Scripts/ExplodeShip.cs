@@ -60,6 +60,9 @@ public class ExplodeShip : MonoBehaviour
             //Also stop Coroutine for ship controls to keep them still (Bia)
             //StopCoroutine("");
             //nope
+            //Ok StopCoroutine is for the Explosion Reset (Bia)
+
+            shipController.enabled = (false);
         }
 
     }

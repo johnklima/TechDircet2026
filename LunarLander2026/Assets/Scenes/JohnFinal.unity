@@ -35781,6 +35781,10 @@ PrefabInstance:
       propertyPath: particleSystem
       value: 
       objectReference: {fileID: 340069927}
+    - target: {fileID: 8557058094245926256, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
+      propertyPath: shipController
+      value: 
+      objectReference: {fileID: 5831529800757840071}
     - target: {fileID: 8962720318232276788, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -35793,6 +35797,17 @@ PrefabInstance:
       addedObject: {fileID: 340069925}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
+--- !u!114 &5831529800757840071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5190029980142284600, guid: a3c718103e5d9a846a4f365d67beff33, type: 3}
+  m_PrefabInstance: {fileID: 5831529800757840070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f481af72eee86a47a19c012ca14726a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
