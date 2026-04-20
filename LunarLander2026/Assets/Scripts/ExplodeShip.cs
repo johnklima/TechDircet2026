@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
 
 
@@ -41,6 +43,14 @@ public class ExplodeShip : MonoBehaviour
 
             //in addition to above call on event to handle Vfx explosion (Bia)
             ExplosionEffects();
+            //then reload the scene after a bit of time after the explosion(Bia)
+
+            
+            Debug.Log("timer start");
+            Invoke("ExplosionResetScene", 2 );
+
+            //Also stop Coroutine for ship controls to keep them still (Bia)
+            StopCoroutine("");
         }
 
     }
@@ -53,5 +63,13 @@ public class ExplodeShip : MonoBehaviour
 
         particleSystem.Play();
 
+    }
+
+    void  ExplosionResetScene()
+    {
+        //yield return new WaitForSeconds(6f);
+        Debug.Log("Reset done");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
     }
 }
