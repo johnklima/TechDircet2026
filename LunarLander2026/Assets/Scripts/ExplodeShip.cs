@@ -13,6 +13,8 @@ public class ExplodeShip : MonoBehaviour
     public VisualEffect ExplosionVFX;
     public ParticleSystem particleSystem;
 
+    //the quick and dirty way, I like quick and dirty...
+    public ShipController shipController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -40,6 +42,8 @@ public class ExplodeShip : MonoBehaviour
                 shippart.GetComponent<BallGravity>().angAcceleration = impulse * 50.0f;
                
             }
+
+            shipController.enabled = false;
 
             //in addition to above call on event to handle Vfx explosion (Bia)
             ExplosionEffects();
