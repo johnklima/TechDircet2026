@@ -11,7 +11,7 @@ public class ExplodeShip : MonoBehaviour
 
     //vfx for explosion goes here (Bia)
     public VisualEffect ExplosionVFX;
-    public ParticleSystem particleSystem;
+    public ParticleSystem particles;
 
     //the quick and dirty way, I like quick and dirty...
     public ShipController shipController;
@@ -20,7 +20,7 @@ public class ExplodeShip : MonoBehaviour
     private void Start()
     {
         ExplosionVFX.pause = true;
-        particleSystem.Stop();
+        particles.Stop();
     }
 
     // Update is called once per frame
@@ -85,7 +85,7 @@ public class ExplodeShip : MonoBehaviour
         ExplosionVFX.Reinit();
         ExplosionVFX.pause = false;
 
-        particleSystem.Play();
+        particles.Play();
 
     }
 }
