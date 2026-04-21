@@ -16,11 +16,11 @@ public class Fullscreen : MonoBehaviour
     {
         if(fade)
         {
-            fadeVal += Time.deltaTime * 3.0f;
+            fadeVal += Time.deltaTime * 4.0f;
             
-            if(fadeVal > 10 )
+            if(fadeVal > 20 )
             {
-                fadeVal = 10;
+                fadeVal = 20;
                 fade = false;
             }
             Fade(fadeVal);
