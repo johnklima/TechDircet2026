@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:ProgressBar value="100" title="" name="Fuelmeter" focusable="false" style="width: 323px; flex-direction: column; height: 24px; top: 8%; left: 5%; margin-left: 4px;"/>
+    <ui:VisualElement style="flex-grow: 1; position: absolute; top: 8%; left: 5%; height: 32px; width: 332px; border-left-width: 0;"/>
+</ui:UXML>
