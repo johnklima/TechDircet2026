@@ -20,7 +20,7 @@ public class Fullscreen : MonoBehaviour
             
             if(fadeVal > 20 )
             {
-                fadeVal = 20;
+                fadeVal = 0;
                 fade = false;
             }
             Fade(fadeVal);

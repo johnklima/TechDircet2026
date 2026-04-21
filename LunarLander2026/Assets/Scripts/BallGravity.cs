@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BallGravity : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class BallGravity : MonoBehaviour
 
     public Vector3 angAcceleration;
     public Vector3 AngularVelocity;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -122,6 +124,7 @@ public class BallGravity : MonoBehaviour
                         //refuel ship
                         transform.GetComponent<ShipController>().FuelCapacity += 10.0f ;
                         transform.GetComponent<ShipController>().Consumption = 0.0f;
+                        ShipGeom.GetComponent<LandShip>().landed = true;
 
                     }
 
@@ -144,7 +147,7 @@ public class BallGravity : MonoBehaviour
 
 
     }
-
+   
     public void reset()
     {
         velocity *= 0;

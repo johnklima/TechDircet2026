@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.VFX;
+using FMODUnity;
 
 public class ShipController : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class ShipController : MonoBehaviour
     public float FuelPercent;
     public Scrollbar Fuelscroll;
 
+    StudioEventEmitter emitter;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,6 +30,8 @@ public class ShipController : MonoBehaviour
         rocket.gameObject.SetActive(true);
         //setting spawn rate seems to work best
         rocket.SetFloat("Spawn Rate", 0);
+
+        emitter = GetComponent<StudioEventEmitter>();
     }
 
     // Update is called once per frame
@@ -112,13 +117,19 @@ public class ShipController : MonoBehaviour
         if(keyIsPressed)
         {
             //play a sound here
+            if(emitter.IsPlaying() == false)
+            {
+                emitter.Play();
+            }
+                 
+
 
             rocket.SetFloat("Spawn Rate", 1024 );
         }
         else
         {
             //stop sound here
-
+            emitter.Stop();
             rocket.SetFloat("Spawn Rate", 0);
         }
 

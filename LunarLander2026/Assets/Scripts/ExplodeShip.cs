@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
-
+using FMODUnity;
 
 public class ExplodeShip : MonoBehaviour
 {
@@ -16,11 +16,19 @@ public class ExplodeShip : MonoBehaviour
     //the quick and dirty way, I like quick and dirty...
     public ShipController shipController;
 
+    private Fullscreen fullscreen;
+
+    StudioEventEmitter emitter;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         ExplosionVFX.pause = true;
         particles.Stop();
+        fullscreen = GetComponent<Fullscreen>();
+
+        emitter = GetComponent<StudioEventEmitter>();
+
     }
 
     // Update is called once per frame
@@ -43,7 +51,14 @@ public class ExplodeShip : MonoBehaviour
                
             }
 
+            //disable controller
             shipController.enabled = false;
+
+            //fade in death fullscreen
+            fullscreen.fade = true;
+
+            //play sound
+            emitter.Play(); 
 
             //in addition to above call on event to handle Vfx explosion (Bia)
             ExplosionEffects();
@@ -52,7 +67,7 @@ public class ExplodeShip : MonoBehaviour
             
             Debug.Log("timer start");
 
-            StartCoroutine("ExplosionResetScene", 3);  // wait 3 seconds and reload the same scene.
+            StartCoroutine("ExplosionResetScene", 5);  // wait 5 seconds and reload the same scene.
 
             //nope
             //Invoke("ExplosionResetScene", 2 );
@@ -73,6 +88,7 @@ public class ExplodeShip : MonoBehaviour
         //dont do nuthin until seconds have expired
         yield return new WaitForSeconds(seconds);
 
+        fullscreen.Fade(0);
         //now reload the same scene because we crashed
         Debug.Log("Reset done");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
