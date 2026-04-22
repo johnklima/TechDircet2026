@@ -64549,7 +64549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2935872ef352233488d8b93e9b5c3936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallGravity
-  GRAVITY_CONSTANT: 0
+  GRAVITY_CONSTANT: -2.5
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   thrust: {x: 0, y: 0, z: 0}
