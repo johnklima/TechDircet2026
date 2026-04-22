@@ -20,12 +20,15 @@ public class ExplodeShip : MonoBehaviour
 
     public StudioEventEmitter emitter;
 
+    BallGravity gravity;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         ExplosionVFX.pause = true;
         particles.Stop();
         fullscreen = GetComponent<Fullscreen>();
+        gravity = GetComponent<BallGravity>();  
         
     }
 
@@ -35,6 +38,8 @@ public class ExplodeShip : MonoBehaviour
         if (explode)
         {
             explode = false;
+
+            //blow all the pieces in all directions
             Transform ship  = shipController.TheShip;
             foreach (Transform shippart in ship)
             {
@@ -60,13 +65,16 @@ public class ExplodeShip : MonoBehaviour
 
             //in addition to above call on event to handle Vfx explosion (Bia)
             ExplosionEffects();
-            
+
+            //stop motion
+            gravity.reset();
+
             //then reload the scene after a bit of time after the explosion(Bia)            
             Debug.Log("timer start");
 
             StartCoroutine("ExplosionResetScene", 5);  // wait 5 seconds and reload the same scene.
 
-             shipController.enabled = (false);
+             
         }
 
     }

@@ -1,7 +1,8 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 using UnityEngine.VFX;
-using FMODUnity;
 
 public class ShipController : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class ShipController : MonoBehaviour
     public Scrollbar Fuelscroll;
 
     public Camera shipCam;
+    public Transform ShipRotator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -49,7 +51,7 @@ public class ShipController : MonoBehaviour
 
         }
 
-
+        
         float TL = 0;
         float TR = 0;
         float TU = 0;
@@ -74,7 +76,7 @@ public class ShipController : MonoBehaviour
             Consumption += Time.deltaTime;
 
         }
-        /*
+        
         //left
         if (Input.GetKey(KeyCode.A))
         {
@@ -90,7 +92,7 @@ public class ShipController : MonoBehaviour
             keyIsPressed = true;
             Consumption += Time.deltaTime;
         }
-        */
+        
 
         //(Bia) adding if statements for forward and backwards thrust
         // up arrow and down arrow used since wasd is for vertical movement
@@ -118,9 +120,11 @@ public class ShipController : MonoBehaviour
         Vector3 dir = shipCam.transform.localPosition ;
         dir.y = 0;
         dir.Normalize();
-        ShipPhysics.thrust = -dir * TF + dir * TB  + Vector3.up * TU;
+        ShipPhysics.thrust = -dir * TF + dir * TB  + Vector3.up * TU ;
 
-        //+ dir * TL - dir * TR
+        dir = Vector3.Cross(dir, Vector3.up);
+        dir.Normalize ();   
+        ShipPhysics.thrust += -dir * TL + dir * TR;
 
         //found that spawn rate best for rocket vfx
         if (keyIsPressed)
@@ -143,50 +147,55 @@ public class ShipController : MonoBehaviour
         }
 
 
-        //ship rotations
-        /*
+        //ship rotations      
         Quaternion normalRotation = Quaternion.identity;
-        //Quaternion rightRotation = Quaternion.Euler(0, 0, -40.0f);
-        //Quaternion leftRotation = Quaternion.Euler(0, 0, 40.0f);
-        Quaternion forwardRotation = Quaternion.Euler(40.0f, 0, 0);
-        Quaternion backwardRotation = Quaternion.Euler(-40.0f, 0, 0);
+        Quaternion rightRotation = Quaternion.Euler(0, 0, -40.0f); 
+        Quaternion leftRotation = Quaternion.Euler(0, 0, 40.0f) ;
+        Quaternion forwardRotation = Quaternion.Euler(40.0f, 0, 0) ;
+        Quaternion backwardRotation = Quaternion.Euler(-40.0f, 0, 0) ;
 
 
-        // ship rotation based on thrust.
+        // ship rotation based on thrust?
         // maybe better to use velocity?
         // do something with camera?
- 
-     
+
+        //first rotate the ship by camera - sort of ok for now
+        Vector3 eulers = shipCam.transform.localRotation.eulerAngles;
+        Quaternion rot = Quaternion.Euler(0, eulers.y, 0);
+        
+        
+        //ShipRotator.localRotation = rot;
+        ShipRotator.localRotation = Quaternion.Lerp(ShipRotator.localRotation,rot,Time.deltaTime);
+
+        //now rotate locally
         if (TL > 0.0f)
         {
-            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, leftRotation, Time.deltaTime );
+            TheShip.localRotation = Quaternion.Lerp(TheShip.localRotation, leftRotation, Time.deltaTime );
         }
         
 
         if (TR > 0.0f)
         {
-            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, rightRotation, Time.deltaTime );
-        }
-       
+            TheShip.localRotation = Quaternion.Lerp(TheShip.localRotation, rightRotation, Time.deltaTime );
+        }       
 
         //(BIA) forward and backwarrds thrust
         if (TF > 0.0f)
         {
-            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, forwardRotation, Time.deltaTime);
-        }
-        
+            TheShip.localRotation = Quaternion.Lerp(TheShip.localRotation, forwardRotation, Time.deltaTime);
+        }        
 
         if (TB > 0.0f)
         {
-            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, backwardRotation, Time.deltaTime);
+            TheShip.localRotation = Quaternion.Lerp(TheShip.localRotation, backwardRotation, Time.deltaTime);
         }
-     
+        
 
         //restitution
         if (keyIsPressed == false)
         {
-            TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
+            TheShip.localRotation = Quaternion.Lerp(TheShip.localRotation, normalRotation, Time.deltaTime);
         }
-        */
+        
     }
 }
