@@ -20,7 +20,7 @@ public class LandShip : MonoBehaviour
        if(landed)
         {
             landed = false;
-            StartCoroutine("LoadNextScene", 2);  // wait 5 seconds and reload the same scene.
+            StartCoroutine("LoadNextScene", 2);  // wait 2 seconds and reload the same scene.
 
         }
     }
@@ -34,15 +34,14 @@ public class LandShip : MonoBehaviour
         //nuke what we dont want to carry to the next scene
         Destroy(nukethis.gameObject);
 
-        //increment scene number
-        SceneNumber++;
-
         //MAKE SURE IT RUNS ONCE
         StopAllCoroutines();
-        
+
+        //bump next
+        SceneNumber++;
         //load it
         Debug.Log("Reset done Scene: " + SceneNumber);
-        SceneManager.LoadScene(SceneNumber, LoadSceneMode.Additive);
+        SceneManager.LoadScene(SceneNumber);
        
     }
 }

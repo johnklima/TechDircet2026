@@ -19,10 +19,6 @@ public class Spawn : MonoBehaviour
         ship.GetComponent<BallGravity>().OnRespawn();
         ship.GetComponent<BallGravity>().GRAVITY_CONSTANT = sceneGravity; // TODO: param this to OnRespawn
 
-        //get this scene additive things to nuke so ready for when we exit
-        GameObject nukeThis = GameObject.Find("ThingsToNuke");
-        ship.GetComponent<ShipController>().nukethis = nukeThis.transform;
-
         //hide spawn (me)
         transform.gameObject.SetActive(false);
         

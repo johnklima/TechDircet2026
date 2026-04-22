@@ -89,16 +89,13 @@ public class ExplodeShip : MonoBehaviour
         fullscreen.Fade(0);
         //stop sound
         emitter.Stop();
-        //now reload the same scene because we crashed
-        //nuke what we dont want to carry to the next scene
-        Destroy(shipController.nukethis);
-
+        
         //MAKE SURE IT RUNS ONCE
         StopAllCoroutines();
 
         //load it if greater than zero
         if (shipController.sceneNumber > 0)
-            SceneManager.LoadScene(shipController.sceneNumber, LoadSceneMode.Additive);
+            SceneManager.LoadScene(shipController.sceneNumber);
         else
             SceneManager.LoadScene(0); // reload first scene
 
