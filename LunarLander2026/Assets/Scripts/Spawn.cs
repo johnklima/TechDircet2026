@@ -16,14 +16,12 @@ public class Spawn : MonoBehaviour
         ship.transform.position = transform.position;
 
         //reset physics and state
-        ship.GetComponent<BallGravity>().reset();
-
-
-        ship.GetComponent<BallGravity>().GRAVITY_CONSTANT = sceneGravity;
+        ship.GetComponent<BallGravity>().OnRespawn();
+        ship.GetComponent<BallGravity>().GRAVITY_CONSTANT = sceneGravity; // TODO: param this to OnRespawn
 
         //get this scene additive's things to nuke
         GameObject nukeThis = GameObject.Find("ThingsToNuke");
-        ship.GetComponent<LandShip>().nukethis = nukeThis.transform;
+        ship.GetComponent<ShipController>().nukethis = nukeThis.transform;
 
         //hide spawn
         transform.gameObject.SetActive(false);

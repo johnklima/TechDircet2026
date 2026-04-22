@@ -48,7 +48,7 @@ public class BallGravity : MonoBehaviour
 
     void handleMovement()
     {
-
+        if (onSurface) { return; }
          
          //I generally do rotation first, translation second
          AngularVelocity += angAcceleration * Time.deltaTime * Time.deltaTime;   
@@ -105,9 +105,10 @@ public class BallGravity : MonoBehaviour
                     //do something game over, reload entire scene
                     Debug.Log("landed on " + hitname);
                     Debug.Log("BOOOOM!! " + mag);
-                    transform.GetComponent<ExplodeShip>().explode = true;                    
-                    
-                }                    
+                    transform.GetComponent<ExplodeShip>().explode = true;
+                    onSurface = true;
+
+            }                    
                 else
                 {
                     //reset lander on ground
@@ -120,7 +121,7 @@ public class BallGravity : MonoBehaviour
                         transform.GetComponent<ShipController>().FuelCapacity += 10.0f;
                         transform.GetComponent<ShipController>().Consumption = 0.0f;
                         transform.GetComponent<LandShip>().landed = true;
-
+                        onSurface = true;
                     }
                     else 
                     {
@@ -145,12 +146,27 @@ public class BallGravity : MonoBehaviour
    
     public void reset()
     {
+        Debug.Log("BallGravity Reset");
+
         velocity *= 0;
         acceleration *= 0;
         impulse *= 0;
         thrust *= 0;
-        onSurface = false;
+        
        
     }
+
+    public void OnRespawn()
+    {
+        Debug.Log("BallGravity Reset on spawn");
+
+        velocity *= 0;
+        acceleration *= 0;
+        impulse *= 0;
+        thrust *= 0;
+        onSurface = false;  
+
+    }
+
 
 }
