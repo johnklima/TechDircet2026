@@ -42,15 +42,13 @@ public class BallGravity : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {        
+    {
         handleMovement();
     }
 
     void handleMovement()
     {
 
-        if (onSurface)
-            return;
          
          //I generally do rotation first, translation second
          AngularVelocity += angAcceleration * Time.deltaTime * Time.deltaTime;   
@@ -96,7 +94,7 @@ public class BallGravity : MonoBehaviour
         }
             
         //TODO: rethink
-        if (Mathf.Abs(CurrentHeight - SurfaceHeight) < 0.1f && Geometry && !onSurface)
+        if (Mathf.Abs(CurrentHeight - SurfaceHeight) < 0.1f && Geometry)
         {
            
             //TODO: generalize this, use OOP.           
@@ -107,8 +105,7 @@ public class BallGravity : MonoBehaviour
                     //do something game over, reload entire scene
                     Debug.Log("landed on " + hitname);
                     Debug.Log("BOOOOM!! " + mag);
-                    transform.GetComponent<ExplodeShip>().explode = true;
-                    onSurface = true;
+                    transform.GetComponent<ExplodeShip>().explode = true;                    
                     
                 }                    
                 else
@@ -122,11 +119,9 @@ public class BallGravity : MonoBehaviour
                         //refuel ship
                         transform.GetComponent<ShipController>().FuelCapacity += 10.0f;
                         transform.GetComponent<ShipController>().Consumption = 0.0f;
-                        //begin load next level
-                        transform.GetComponent<ShipController>().sceneNumber++;
                         transform.GetComponent<LandShip>().landed = true;
 
-                }
+                    }
                     else 
                     {
                         //Debug.Log("on surface");
@@ -155,8 +150,7 @@ public class BallGravity : MonoBehaviour
         impulse *= 0;
         thrust *= 0;
         onSurface = false;
-
-
+       
     }
 
 }

@@ -18,7 +18,7 @@ public class Spawn : MonoBehaviour
         
         //get this scene additive's things to nuke
         GameObject nukeThis = GameObject.Find("ThingsToNuke");
-        ship.GetComponent<ShipController>().nukeThis = nukeThis.transform;
+        ship.GetComponent<LandShip>().nukethis = nukeThis.transform;
 
         //hide spawn
         transform.gameObject.SetActive(false);

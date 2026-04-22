@@ -64,7 +64,10 @@ public class ExplodeShip : MonoBehaviour
             emitter.Play(); 
 
             //in addition to above call on event to handle Vfx explosion (Bia)
-            ExplosionEffects();           
+            ExplosionEffects();
+
+            //stop motion
+            gravity.reset();
 
             //then reload the scene after a bit of time after the explosion(Bia)            
             Debug.Log("timer start");
@@ -86,14 +89,8 @@ public class ExplodeShip : MonoBehaviour
         fullscreen.Fade(0);
         //stop sound
         emitter.Stop();
-
-        //stop motion
-        gravity.reset();
-
-        Destroy(shipController.nukeThis.gameObject);
-
         //now reload the same scene because we crashed      
-        SceneManager.LoadScene(shipController.sceneNumber, LoadSceneMode.Additive);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Debug.Log("Reset done");
 
     }
