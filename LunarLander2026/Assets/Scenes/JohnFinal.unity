@@ -246,6 +246,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 604712594}
   m_LocalEulerAnglesHint: {x: 127.215, y: 84.567, z: 255.736}
+--- !u!4 &220781318 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6999098210488264199, guid: 8eadbbf320044984d9b7f644872e8677, type: 3}
+  m_PrefabInstance: {fileID: 409473130227474313}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &222656846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -882,6 +887,7 @@ GameObject:
   - component: {fileID: 1200104241}
   - component: {fileID: 1200104244}
   - component: {fileID: 1200104242}
+  - component: {fileID: 1200104245}
   m_Layer: 0
   m_Name: Minimap Camera
   m_TagString: Untagged
@@ -897,12 +903,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200104240}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1408318638}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1200104242
 MonoBehaviour:
@@ -999,6 +1005,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1200104245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200104240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279b53e443953e14b978016c87a0988f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  Player: {fileID: 220781318}
 --- !u!4 &1212498345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2326243625509944851, guid: 51ffd6849c180444284b5b6f46f3cc45, type: 3}
@@ -1036,38 +1055,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8553611112182188037, guid: 6326a3cbcccc8164aabd3ab56f03f3e2, type: 3}
   m_PrefabInstance: {fileID: 593461918}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1408318637
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1408318638}
-  m_Layer: 0
-  m_Name: MiniMap System
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1408318638
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408318637}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1200104241}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1476000571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1434,7 +1421,7 @@ GameObject:
   - component: {fileID: 2117760212}
   - component: {fileID: 2117760211}
   m_Layer: 5
-  m_Name: Minimap Map
+  m_Name: Minimap Map Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1659,5 +1646,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1740350669}
   - {fileID: 409473130227474313}
-  - {fileID: 1408318638}
+  - {fileID: 1200104241}
   - {fileID: 2117760214}
