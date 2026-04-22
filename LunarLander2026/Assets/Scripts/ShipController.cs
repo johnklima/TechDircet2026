@@ -20,11 +20,12 @@ public class ShipController : MonoBehaviour
     public float FuelPercent;
     public Scrollbar Fuelscroll;
 
-
+    public Camera shipCam;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        shipCam = Camera.main;
         Consumption = 0;        
         //rocket is disabled when in edit mode
         rocket.gameObject.SetActive(true);
@@ -73,6 +74,7 @@ public class ShipController : MonoBehaviour
             Consumption += Time.deltaTime;
 
         }
+        /*
         //left
         if (Input.GetKey(KeyCode.A))
         {
@@ -88,6 +90,7 @@ public class ShipController : MonoBehaviour
             keyIsPressed = true;
             Consumption += Time.deltaTime;
         }
+        */
 
         //(Bia) adding if statements for forward and backwards thrust
         // up arrow and down arrow used since wasd is for vertical movement
@@ -109,11 +112,18 @@ public class ShipController : MonoBehaviour
             Consumption += Time.deltaTime;
         }
 
+
+        //TODO add camera forward for l/r/f/b, need to think...
         //add the thrust
-        ShipPhysics.thrust = Vector3.left * TL + Vector3.right * TR + Vector3.up * TU + Vector3.forward * TF + Vector3.back * TB;
+        Vector3 dir = shipCam.transform.localPosition ;
+        dir.y = 0;
+        dir.Normalize();
+        ShipPhysics.thrust = -dir * TF + dir * TB  + Vector3.up * TU;
+
+        //+ dir * TL - dir * TR
 
         //found that spawn rate best for rocket vfx
-        if(keyIsPressed)
+        if (keyIsPressed)
         {
             //play a sound here
             if(emitter.IsPlaying() == false)
@@ -134,10 +144,10 @@ public class ShipController : MonoBehaviour
 
 
         //ship rotations
-        float normalY = 1.0f;
+        /*
         Quaternion normalRotation = Quaternion.identity;
-        Quaternion rightRotation = Quaternion.Euler(0, 0, -40.0f);
-        Quaternion leftRotation = Quaternion.Euler(0, 0, 40.0f);
+        //Quaternion rightRotation = Quaternion.Euler(0, 0, -40.0f);
+        //Quaternion leftRotation = Quaternion.Euler(0, 0, 40.0f);
         Quaternion forwardRotation = Quaternion.Euler(40.0f, 0, 0);
         Quaternion backwardRotation = Quaternion.Euler(-40.0f, 0, 0);
 
@@ -146,6 +156,7 @@ public class ShipController : MonoBehaviour
         // maybe better to use velocity?
         // do something with camera?
  
+     
         if (TL > 0.0f)
         {
             TheShip.rotation = Quaternion.Lerp(TheShip.rotation, leftRotation, Time.deltaTime );
@@ -156,7 +167,7 @@ public class ShipController : MonoBehaviour
         {
             TheShip.rotation = Quaternion.Lerp(TheShip.rotation, rightRotation, Time.deltaTime );
         }
-        
+       
 
         //(BIA) forward and backwarrds thrust
         if (TF > 0.0f)
@@ -169,11 +180,13 @@ public class ShipController : MonoBehaviour
         {
             TheShip.rotation = Quaternion.Lerp(TheShip.rotation, backwardRotation, Time.deltaTime);
         }
-        
+     
+
         //restitution
         if (keyIsPressed == false)
         {
             TheShip.rotation = Quaternion.Lerp(TheShip.rotation, normalRotation, Time.deltaTime * 0.5f);
         }
+        */
     }
 }

@@ -36,8 +36,13 @@ public class LandShip : MonoBehaviour
 
         //increment scene number
         SceneNumber++;
+
+        //MAKE SURE IT RUNS ONCE
+        StopAllCoroutines();
+        
         //load it
         Debug.Log("Reset done Scene: " + SceneNumber);
         SceneManager.LoadScene(SceneNumber, LoadSceneMode.Additive);
+       
     }
 }

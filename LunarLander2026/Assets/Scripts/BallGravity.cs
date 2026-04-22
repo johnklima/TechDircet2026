@@ -19,6 +19,7 @@ public class BallGravity : MonoBehaviour
 
     public float SurfaceHeight = 0;
     public float CurrentHeight;
+    public bool onSurface = false;
 
     public Vector3 impulse = new Vector3(0, 0, 0);
 
@@ -96,7 +97,7 @@ public class BallGravity : MonoBehaviour
         if (Mathf.Abs(CurrentHeight - SurfaceHeight) < 0.1f && Geometry)
         {
            
-            //TODO: generalize this, use OOP.
+            //TODO: generalize this, use OOP.           
                           
                 float mag = velocity.magnitude;
                 if (mag > 2.0f)
@@ -111,9 +112,10 @@ public class BallGravity : MonoBehaviour
                 {
                     //reset lander on ground
                     
-                    if (hit.transform.tag == "Platform")
+                    if (hit.transform.tag == "Platform" && onSurface == false)
                     {
                         Debug.Log("on platform");
+                        onSurface = true;
                         //refuel ship
                         transform.GetComponent<ShipController>().FuelCapacity += 10.0f;
                         transform.GetComponent<ShipController>().Consumption = 0.0f;
@@ -122,14 +124,10 @@ public class BallGravity : MonoBehaviour
                     }
                     else 
                     {
-                        Debug.Log("on surface");
+                        //Debug.Log("on surface");
                     }
 
                 }
-                    
-
-            
-                
             
             transform.position = curPos;       //hard reset to the surface
             acceleration *= 0;
@@ -151,6 +149,7 @@ public class BallGravity : MonoBehaviour
         acceleration *= 0;
         impulse *= 0;
         thrust *= 0;
+        onSurface = false;
        
     }
 
