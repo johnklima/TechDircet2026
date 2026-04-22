@@ -63977,7 +63977,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -100, z: 0}
-  m_LocalScale: {x: 0.07, y: 100, z: 0.07}
+  m_LocalScale: {x: 0.6, y: 100, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6264421522616857217}
@@ -64589,7 +64589,6 @@ MonoBehaviour:
   shipCam: {fileID: 461365263387922302}
   ShipRotator: {fileID: 5813535332703239717}
   sceneNumber: 0
-  nukethis: {fileID: 0}
 --- !u!114 &861313781910568198
 MonoBehaviour:
   m_ObjectHideFlags: 0
