@@ -6,6 +6,7 @@ public class LandShip : MonoBehaviour
 {
     public Transform nukethis;
     public bool landed = false;
+    public int SceneNumber = 0;  //first scene is already loaded
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,15 +28,16 @@ public class LandShip : MonoBehaviour
 
     IEnumerator LoadNextScene(float seconds)
     {
-
         //dont do nuthin until seconds have expired
         yield return new WaitForSeconds(seconds);
 
-        //now reload the same scene because we crashed
-        Debug.Log("Reset done");
-
+        //nuke what we dont want to carry to the next scene
         Destroy(nukethis.gameObject);
 
-        SceneManager.LoadScene(1, LoadSceneMode.Additive);
+        //increment scene number
+        SceneNumber++;
+        //load it
+        Debug.Log("Reset done Scene: " + SceneNumber);
+        SceneManager.LoadScene(SceneNumber, LoadSceneMode.Additive);
     }
 }

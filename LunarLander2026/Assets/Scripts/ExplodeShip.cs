@@ -18,7 +18,7 @@ public class ExplodeShip : MonoBehaviour
 
     private Fullscreen fullscreen;
 
-    StudioEventEmitter emitter;
+    public StudioEventEmitter emitter;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -26,9 +26,7 @@ public class ExplodeShip : MonoBehaviour
         ExplosionVFX.pause = true;
         particles.Stop();
         fullscreen = GetComponent<Fullscreen>();
-
-        emitter = GetComponent<StudioEventEmitter>();
-
+        
     }
 
     // Update is called once per frame
@@ -37,8 +35,8 @@ public class ExplodeShip : MonoBehaviour
         if (explode)
         {
             explode = false;
-
-            foreach (Transform shippart in transform)
+            Transform ship  = shipController.TheShip;
+            foreach (Transform shippart in ship)
             {
                 float x = Random.Range(-10.0f, 10.0f);
                 float y = Random.Range(-10.0f, 10.0f);
@@ -62,22 +60,13 @@ public class ExplodeShip : MonoBehaviour
 
             //in addition to above call on event to handle Vfx explosion (Bia)
             ExplosionEffects();
-            //then reload the scene after a bit of time after the explosion(Bia)
-
             
+            //then reload the scene after a bit of time after the explosion(Bia)            
             Debug.Log("timer start");
 
             StartCoroutine("ExplosionResetScene", 5);  // wait 5 seconds and reload the same scene.
 
-            //nope
-            //Invoke("ExplosionResetScene", 2 );
-
-            //Also stop Coroutine for ship controls to keep them still (Bia)
-            //StopCoroutine("");
-            //nope
-            //Ok StopCoroutine is for the Explosion Reset (Bia)
-
-            shipController.enabled = (false);
+             shipController.enabled = (false);
         }
 
     }
@@ -88,11 +77,14 @@ public class ExplodeShip : MonoBehaviour
         //dont do nuthin until seconds have expired
         yield return new WaitForSeconds(seconds);
 
+        //reset fullscreen shader
         fullscreen.Fade(0);
-        //now reload the same scene because we crashed
-        Debug.Log("Reset done");
+        //stop sound
+        emitter.Stop();
+        //now reload the same scene because we crashed      
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        
+        Debug.Log("Reset done");
+
     }
 
     void ExplosionEffects()

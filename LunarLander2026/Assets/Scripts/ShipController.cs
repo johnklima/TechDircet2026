@@ -10,28 +10,27 @@ public class ShipController : MonoBehaviour
     public BallGravity ShipPhysics;
     public float ThrustForce = 2.0f;
 
-   
+    //rocket effect
     public VisualEffect rocket;
-
+    //rocket sound
+    public StudioEventEmitter emitter;
 
     public float Consumption;
     public float FuelCapacity = 3.0f;
     public float FuelPercent;
     public Scrollbar Fuelscroll;
 
-    StudioEventEmitter emitter;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Consumption = 0;
-        
+        Consumption = 0;        
         //rocket is disabled when in edit mode
         rocket.gameObject.SetActive(true);
         //setting spawn rate seems to work best
         rocket.SetFloat("Spawn Rate", 0);
-
-        emitter = GetComponent<StudioEventEmitter>();
+        
     }
 
     // Update is called once per frame

@@ -24,10 +24,7 @@ public class BallGravity : MonoBehaviour
 
     public float timeScalar = 1.0f;
 
-    public Vector3 HitVelocity = new Vector3(0, 0, 0);
-
-    public Transform ShipGeom;
-    
+    public Transform Geometry;   //if there is a geometry to react to landing    
 
     public bool InertialDampnerXZ = true;
     public float DampnFactor = 0.5f;
@@ -43,7 +40,7 @@ public class BallGravity : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         handleMovement();
     }
@@ -95,43 +92,43 @@ public class BallGravity : MonoBehaviour
            
         }
             
-
-        if (CurrentHeight < SurfaceHeight)
+        //TODO: rethink
+        if (Mathf.Abs(CurrentHeight - SurfaceHeight) < 0.1f && Geometry)
         {
            
-
-            if(HitVelocity.magnitude == 0)
-            {
-
-                HitVelocity = velocity;
-                float mag = HitVelocity.magnitude;
+            //TODO: generalize this, use OOP.
+                          
+                float mag = velocity.magnitude;
                 if (mag > 2.0f)
                 {
                     //do something game over, reload entire scene
                     Debug.Log("landed on " + hitname);
-                    ShipGeom.GetComponent<ExplodeShip>().explode = true;
                     Debug.Log("BOOOOM!! " + mag);
+                    transform.GetComponent<ExplodeShip>().explode = true;                    
                     
                 }                    
                 else
                 {
                     //reset lander on ground
-                    Debug.Log("landed on " + hitname);
-                    Debug.Log("LANDED!!! " + mag);
-
-                    if(hit.transform.tag == "Platform")
+                    
+                    if (hit.transform.tag == "Platform")
                     {
+                        Debug.Log("on platform");
                         //refuel ship
-                        transform.GetComponent<ShipController>().FuelCapacity += 10.0f ;
+                        transform.GetComponent<ShipController>().FuelCapacity += 10.0f;
                         transform.GetComponent<ShipController>().Consumption = 0.0f;
-                        ShipGeom.GetComponent<LandShip>().landed = true;
+                        transform.GetComponent<LandShip>().landed = true;
 
+                    }
+                    else 
+                    {
+                        Debug.Log("on surface");
                     }
 
                 }
                     
 
-            }
+            
                 
             
             transform.position = curPos;       //hard reset to the surface

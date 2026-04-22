@@ -6,9 +6,16 @@ public class Spawn : MonoBehaviour
     void Start()
     {
         //set up the scene
+        
+        //get ship
         GameObject ship = GameObject.Find("Ship");
         ship.transform.position = transform.position;
+        
+        //get this scene additive's thinks to nuke
+        GameObject nukeThis = GameObject.Find("ThingsToNuke");
+        ship.GetComponent<LandShip>().nukethis = nukeThis.transform;
 
+        //hide spawn
         transform.gameObject.SetActive(false);
         
     }
