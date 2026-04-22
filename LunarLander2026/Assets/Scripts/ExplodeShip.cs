@@ -48,9 +48,14 @@ public class ExplodeShip : MonoBehaviour
                 float z = Random.Range(-10.0f, 10.0f);
                 Vector3 impulse = Vector3.up * y + Vector3.right * x + Vector3.forward * z;
 
-                shippart.GetComponent<BallGravity>().enabled = true;
-                shippart.GetComponent<BallGravity>().impulse = impulse;
-                shippart.GetComponent<BallGravity>().angAcceleration = impulse * 50.0f;
+                if(shippart.GetComponent<BallGravity>())
+                {
+                    shippart.GetComponent<BallGravity>().enabled = true;
+                    shippart.GetComponent<BallGravity>().impulse = impulse;
+                    shippart.GetComponent<BallGravity>().angAcceleration = impulse * 50.0f;
+
+                }
+          
                
             }
 
