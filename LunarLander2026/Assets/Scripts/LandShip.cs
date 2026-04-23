@@ -7,11 +7,15 @@ public class LandShip : MonoBehaviour
     
     public bool landed = false;
     private ShipController shipController;
-    
+    private BallGravity ballGravity;
+    public int landings = 0;
+    public int requiredLandings = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        shipController = GetComponent<ShipController>();    
+        shipController = GetComponent<ShipController>(); 
+        ballGravity = GetComponent<BallGravity>();
     }
 
     // Update is called once per frame
@@ -20,7 +24,18 @@ public class LandShip : MonoBehaviour
        if(landed)
         {
             landed = false;
-            StartCoroutine("LoadNextScene", 2);  // wait 2 seconds and reload the same scene.
+
+            landings++;
+            if(landings >= requiredLandings)
+            {
+                StartCoroutine("LoadNextScene", 2);  // wait 2 seconds and reload the same scene.
+            }
+            else
+            {
+
+                ballGravity.OnRespawn();
+
+            }
 
         }
     }

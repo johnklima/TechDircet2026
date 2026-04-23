@@ -116,12 +116,14 @@ public class BallGravity : MonoBehaviour
                     if (hit.transform.tag == "Platform" && onSurface == false)
                     {
                         Debug.Log("on platform");
+                        hit.transform.tag = "Untagged";
+                        
                         onSurface = true;
                         //refuel ship
                         transform.GetComponent<ShipController>().FuelCapacity += 10.0f;
                         transform.GetComponent<ShipController>().Consumption = 0.0f;
                         transform.GetComponent<LandShip>().landed = true;
-                        onSurface = true;
+                        
                     }
                     else 
                     {
