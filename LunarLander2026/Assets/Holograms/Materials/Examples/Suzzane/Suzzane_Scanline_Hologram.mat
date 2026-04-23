@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Suzzane_Scanline_Hologram
-  m_Shader: {fileID: -6465566751694194690, guid: bf4ecc474ef034c28b13a0ea6f7b28c6, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 24a73dccd7b6fad4798be282f96a21f4, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -31,13 +31,48 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses:
-  - MOTIONVECTORS
+  disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _ColorGradientMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionMaskTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Hologram_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseDistortion_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_01_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_02_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: 934fec4d6df2e4d4fbf7d7c1ca178fe6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -55,24 +90,54 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaCutoff: 0.5
+    - _Cull1: 2
+    - _DepthFade: 1
     - _Displacement_Density: 0.2
     - _Displacement_Noise_Scale: 100
     - _Displacement_Offset: 0.01
     - _Displacement_Speed: 1
+    - _Dissolve: 0
+    - _DistortionAmount: 1
+    - _DistortionMaskIntensity: 1
+    - _Dst1: 10
     - _Emission_Scale: 10
+    - _EmissiveIntensity: 1
     - _Fresnel_Power: 2.5
+    - _Mask_Multiply: 1
+    - _Mask_Power: 1
+    - _NoisesOpacityBoost: 1
+    - _Noises_Multiply: 5
+    - _Noises_Power: 1
     - _Pattern_Boost: 1
     - _Pattern_Density: 500
     - _Pattern_Edge_A: 0
     - _Pattern_Edge_B: 0
     - _Pattern_Noise_Scale: 50
-    - _Pattern_Speed: 1
+    - _Pattern_Speed: 100
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _Src1: 5
+    - _WindSpeed: 1
+    - _ZTest1: 2
+    - _ZWrite1: 0
     m_Colors:
+    - White: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorBottom: {r: 1, g: 0.36666667, b: 0, a: 0}
+    - _ColorTop: {r: 1, g: 0.6666667, b: 0, a: 0}
     - _Displacement_Direction: {r: 0, g: 1, b: 0, a: 0}
     - _Displacement_Noise_Direction: {r: 1, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Hologram_Color: {r: 1, g: 0, b: 0.9039521, a: 1}
+    - _Mask_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Mask_Scale: {r: 1, g: 1, b: 0, a: 0}
+    - _NoiseDistortion_Scale: {r: 1, g: 1, b: 0, a: 0}
+    - _NoiseDistortion_Speed: {r: -0.3, g: -0.3, b: 0, a: 0}
+    - _Noise_01_Scale: {r: 0.8, g: 0.8, b: 0, a: 0}
+    - _Noise_01_Speed: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Noise_02_Scale: {r: 1, g: 1, b: 0, a: 0}
+    - _Noise_02_Speed: {r: -0.2, g: 0.4, b: 0, a: 0}
     - _Pattern_Direction: {r: 0, g: 1, b: 0, a: 0}
     - _Texture_Tint_Color: {r: 0.11574028, g: 0, b: 1, a: 0.2509804}
   m_BuildTextureStacks: []

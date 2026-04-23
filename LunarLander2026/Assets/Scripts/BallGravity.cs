@@ -116,6 +116,10 @@ public class BallGravity : MonoBehaviour
                     if (hit.transform.tag == "Platform" && onSurface == false)
                     {
                         Debug.Log("on platform");
+
+                        //once untagged after landing it is no longer a valid surface to land on. You can still
+                        //touch down, but no extra points, no extra fuel.
+
                         hit.transform.tag = "Untagged";
                         
                         onSurface = true;
