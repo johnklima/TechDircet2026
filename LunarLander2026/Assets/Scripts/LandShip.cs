@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class LandShip : MonoBehaviour
 {
-    public Transform nukethis;
+    
     public bool landed = false;
     public int SceneNumber = 0;  //first scene is already loaded
 
@@ -31,8 +31,6 @@ public class LandShip : MonoBehaviour
         //dont do nuthin until seconds have expired
         yield return new WaitForSeconds(seconds);
 
-        //nuke what we dont want to carry to the next scene
-        Destroy(nukethis.gameObject);
 
         //MAKE SURE IT RUNS ONCE
         StopAllCoroutines();
