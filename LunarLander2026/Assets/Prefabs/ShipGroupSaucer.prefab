@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2843451459995326898}
   - component: {fileID: 2162873224790027747}
   - component: {fileID: 1868196014551542566}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: AdditonalSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4935,7 +4935,7 @@ GameObject:
   - component: {fileID: 6887503563334611087}
   - component: {fileID: 137520889255340582}
   - component: {fileID: 6646484408318345946}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: AdditonalSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9859,7 +9859,7 @@ GameObject:
   - component: {fileID: 5519985863517629114}
   - component: {fileID: 1334386006745055152}
   - component: {fileID: 5666747936410666733}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14766,7 +14766,7 @@ GameObject:
   - component: {fileID: 521156973729299735}
   - component: {fileID: 7816351126693268305}
   - component: {fileID: 74953801949932966}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15368,7 +15368,7 @@ GameObject:
   - component: {fileID: 6668530856351993292}
   - component: {fileID: 5834569926109786866}
   - component: {fileID: 5869388706702647265}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FlamesVFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15510,7 +15510,7 @@ GameObject:
   - component: {fileID: 9149437519540355116}
   - component: {fileID: 6089277482727153420}
   - component: {fileID: 348487107679893371}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20416,7 +20416,7 @@ GameObject:
   - component: {fileID: 2274600419249351229}
   - component: {fileID: 1495337054676628403}
   - component: {fileID: 9003837919521017155}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Shockwave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25323,7 +25323,7 @@ GameObject:
   - component: {fileID: 2284237108098261763}
   - component: {fileID: 1286291500905311589}
   - component: {fileID: 1389832272205986311}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Minimap Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25464,7 +25464,7 @@ GameObject:
   - component: {fileID: 1456429832208878302}
   - component: {fileID: 8025368670820667021}
   - component: {fileID: 682712880684028212}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: MiniMap Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25534,7 +25534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3455154397907894718}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ShipGroupSaucer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25568,7 +25568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6291564007357222300}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25606,7 +25606,7 @@ GameObject:
   - component: {fileID: 8368152320028443366}
   - component: {fileID: 8862289477760260996}
   - component: {fileID: 2556978965057023849}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25693,7 +25693,7 @@ GameObject:
   - component: {fileID: 9222715422907332361}
   - component: {fileID: 8183421086629766230}
   - component: {fileID: 8519606719050864861}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25875,7 +25875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2935872ef352233488d8b93e9b5c3936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallGravity
-  GRAVITY_CONSTANT: 0
+  GRAVITY_CONSTANT: -2.5
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   thrust: {x: 0, y: 0, z: 0}
@@ -25971,7 +25971,7 @@ GameObject:
   - component: {fileID: 1529894351246141761}
   - component: {fileID: 3841584165637425457}
   - component: {fileID: 2366552797627168577}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Shockwave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30875,7 +30875,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7604312892965291862}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ShipGeometryRotator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30910,7 +30910,7 @@ GameObject:
   - component: {fileID: 8631556846921912350}
   - component: {fileID: 8419934983581694520}
   - component: {fileID: 8946824776574935488}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Explosion FREE 1 Variant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35854,7 +35854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7081842013390446939}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Particle System Force Fields
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35889,7 +35889,7 @@ GameObject:
   - component: {fileID: 7542018800810120931}
   - component: {fileID: 2106814018582227064}
   - component: {fileID: 4390492643919056252}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SmokeTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40737,7 +40737,7 @@ GameObject:
   - component: {fileID: 6085285311815625484}
   - component: {fileID: 5857226693635038888}
   - component: {fileID: 6162513944677646399}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Embers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45563,7 +45563,7 @@ GameObject:
   - component: {fileID: 6512511112006421568}
   - component: {fileID: 4297513978307315}
   - component: {fileID: 2312925153811426851}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50470,7 +50470,7 @@ GameObject:
   - component: {fileID: 4927889881436748941}
   - component: {fileID: 3289264770216132177}
   - component: {fileID: 5134528478718868739}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Rocket VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50499,7 +50499,7 @@ VisualEffect:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4344951140844970975}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Asset: {fileID: 8926484042661614526, guid: cec00bb3ff22c514e9de3a4cfd27cb8a, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
@@ -50591,7 +50591,7 @@ GameObject:
   - component: {fileID: 8065538891606440658}
   - component: {fileID: 4517166434017575229}
   - component: {fileID: 5331582559951142864}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: MiniMap Boarder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50668,7 +50668,7 @@ GameObject:
   - component: {fileID: 6172102294548305335}
   - component: {fileID: 3181415812037805603}
   - component: {fileID: 6281970087430073533}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ufo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50785,7 +50785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6549793877634627482}
   - component: {fileID: 2107875322547023994}
-  m_Layer: 1
+  m_Layer: 2
   m_Name: Particle System Force Field 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51313,7 +51313,7 @@ GameObject:
   - component: {fileID: 2919737580345183951}
   - component: {fileID: 4813517566207593409}
   - component: {fileID: 2489780024507754517}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SmokeTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56161,7 +56161,7 @@ GameObject:
   - component: {fileID: 66998782804632751}
   - component: {fileID: 5525342981376278272}
   - component: {fileID: 3677187043480237489}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Impulse Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56291,7 +56291,7 @@ GameObject:
   - component: {fileID: 5387428326421913741}
   - component: {fileID: 581520734878160580}
   - component: {fileID: 3032395210840241063}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GiantExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61133,7 +61133,7 @@ GameObject:
   - component: {fileID: 4906368448685107960}
   - component: {fileID: 3172545616661976679}
   - component: {fileID: 97190314905942122}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Embers (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65959,7 +65959,7 @@ GameObject:
   - component: {fileID: 1510079981840289807}
   - component: {fileID: 6341414379532667025}
   - component: {fileID: 1897058938056444640}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66063,7 +66063,7 @@ GameObject:
   - component: {fileID: 8216319819645940710}
   - component: {fileID: 2218889015323068493}
   - component: {fileID: 7009355452199670824}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Explosion 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71009,7 +71009,7 @@ GameObject:
   - component: {fileID: 3247512912107365889}
   - component: {fileID: 5388262001743572426}
   - component: {fileID: 3188777670778629250}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: FuelPercent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71088,7 +71088,7 @@ GameObject:
   - component: {fileID: 2956930539471597853}
   - component: {fileID: 7072891779156162058}
   - component: {fileID: 1120929214936572507}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Embers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76004,7 +76004,7 @@ GameObject:
   - component: {fileID: 8387625904271585698}
   - component: {fileID: 3123073348444045427}
   - component: {fileID: 2842287911540835686}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Particle Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80907,7 +80907,7 @@ GameObject:
   - component: {fileID: 7702217981918716373}
   - component: {fileID: 5663882311395422646}
   - component: {fileID: 5797033326681410122}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80982,7 +80982,7 @@ GameObject:
   - component: {fileID: 5983215073396892366}
   - component: {fileID: 7100895743968137452}
   - component: {fileID: 63085214173646507}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Embers (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85806,7 +85806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2950181933797753706}
   - component: {fileID: 8717701142417271926}
-  m_Layer: 1
+  m_Layer: 2
   m_Name: Particle System Force Field 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86334,7 +86334,7 @@ GameObject:
   - component: {fileID: 40917729013176326}
   - component: {fileID: 2714162488749495496}
   - component: {fileID: 3923206851239387576}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Particle Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91238,7 +91238,7 @@ GameObject:
   - component: {fileID: 3107392635613344078}
   - component: {fileID: 930796185375964603}
   - component: {fileID: 2720069029385525798}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Minimap Map Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91339,7 +91339,7 @@ GameObject:
   - component: {fileID: 636235486979355666}
   - component: {fileID: 8805738217971824234}
   - component: {fileID: 671798283702736806}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BigExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96811,7 +96811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3943095560433913535}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Minimap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96846,7 +96846,7 @@ GameObject:
   - component: {fileID: 3032943494386836894}
   - component: {fileID: 4580537789870702995}
   - component: {fileID: 8505923464345975193}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Impulse Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96945,7 +96945,7 @@ GameObject:
   - component: {fileID: 6169039714093113681}
   - component: {fileID: 3961554928192396152}
   - component: {fileID: 9084769356708046242}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97068,7 +97068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4756017243831289135}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Particle System Force Fields
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97106,7 +97106,7 @@ GameObject:
   - component: {fileID: 5902258071727063915}
   - component: {fileID: 9188464474035149163}
   - component: {fileID: 4006627379465914844}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -97272,7 +97272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1390567237944232065}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Lander
   m_TagString: Untagged
   m_Icon: {fileID: 0}

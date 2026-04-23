@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 186626424344111498}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface203
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 2993352598458209598}
   - component: {fileID: 2784681952856038100}
   - component: {fileID: 660140370674749397}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Embers (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5396,7 +5396,7 @@ GameObject:
   - component: {fileID: 7237439268496168679}
   - component: {fileID: 3552517025201699191}
   - component: {fileID: 8167676210812522655}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Body_Support_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5515,7 +5515,7 @@ GameObject:
   - component: {fileID: 7196660491494684711}
   - component: {fileID: 5614338147080870343}
   - component: {fileID: 7461252338847124590}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5634,7 +5634,7 @@ GameObject:
   - component: {fileID: 4002459643110398983}
   - component: {fileID: 4706301232946504617}
   - component: {fileID: 2313856388251600512}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5752,7 +5752,7 @@ GameObject:
   - component: {fileID: 2510248859883590965}
   - component: {fileID: 3659547632339877433}
   - component: {fileID: 3127843734347097192}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Rocket VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5873,7 +5873,7 @@ GameObject:
   - component: {fileID: 6001988767147200505}
   - component: {fileID: 4283238873952665455}
   - component: {fileID: 8868341201872038794}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5948,7 +5948,7 @@ GameObject:
   - component: {fileID: 7988632084651898623}
   - component: {fileID: 7366111630495444872}
   - component: {fileID: 2576200642294500188}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Shockwave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10854,7 +10854,7 @@ GameObject:
   - component: {fileID: 5516094784387853700}
   - component: {fileID: 679935240198854503}
   - component: {fileID: 4191756776046934232}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SmokeTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15702,7 +15702,7 @@ GameObject:
   - component: {fileID: 4273861348096435916}
   - component: {fileID: 2356761742154807399}
   - component: {fileID: 1740289699810147468}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15779,7 +15779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2534429214456192852}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15818,7 +15818,7 @@ GameObject:
   - component: {fileID: 7879523349730859911}
   - component: {fileID: 6149512253731737414}
   - component: {fileID: 1255111841622616728}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Thruster_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15936,7 +15936,7 @@ GameObject:
   - component: {fileID: 6318904368511525270}
   - component: {fileID: 4563225607123610909}
   - component: {fileID: 7164402229355301812}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Embers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21290,7 +21290,7 @@ GameObject:
   - component: {fileID: 2519650239309881438}
   - component: {fileID: 761133409154063441}
   - component: {fileID: 1252773600611677521}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Explosion FREE 1 Variant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26236,7 +26236,7 @@ GameObject:
   - component: {fileID: 2894765348338284342}
   - component: {fileID: 1390948926883982577}
   - component: {fileID: 2732221555567572747}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FlamesVFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26378,7 +26378,7 @@ GameObject:
   - component: {fileID: 3125930560097482408}
   - component: {fileID: 7089900226115514167}
   - component: {fileID: 3539635126507110233}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31286,7 +31286,7 @@ GameObject:
   - component: {fileID: 1435907884966044180}
   - component: {fileID: 3548337154406685090}
   - component: {fileID: 8564623277205552755}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Thruster_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31405,7 +31405,7 @@ GameObject:
   - component: {fileID: 7678447103483097880}
   - component: {fileID: 1772129760959033888}
   - component: {fileID: 8166306045242168661}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Structural_Frame_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31523,7 +31523,7 @@ GameObject:
   - component: {fileID: 1089163329338215438}
   - component: {fileID: 4979848043954191288}
   - component: {fileID: 4308690650809632346}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Impulse Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31622,7 +31622,7 @@ GameObject:
   - component: {fileID: 9120592205492745762}
   - component: {fileID: 5706663658428763651}
   - component: {fileID: 6732822553872011673}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31748,7 +31748,7 @@ GameObject:
   - component: {fileID: 3617319032511917698}
   - component: {fileID: 6627564439734646695}
   - component: {fileID: 8402609599280227590}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Landing_Pad_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31867,7 +31867,7 @@ GameObject:
   - component: {fileID: 4995815719441962919}
   - component: {fileID: 3650403589227690738}
   - component: {fileID: 2743011115640722137}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_2_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31986,7 +31986,7 @@ GameObject:
   - component: {fileID: 4388701398535211797}
   - component: {fileID: 1291667465967459446}
   - component: {fileID: 9145480245387776575}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_4_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32107,7 +32107,7 @@ GameObject:
   - component: {fileID: 7587577150373467787}
   - component: {fileID: 2223910544287185673}
   - component: {fileID: 9139164241310007787}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -32273,7 +32273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3420048259113881750}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ShipGroupLander
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32309,7 +32309,7 @@ GameObject:
   - component: {fileID: 4468845597241523285}
   - component: {fileID: 6486677745300510583}
   - component: {fileID: 555099539133615137}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32385,7 +32385,7 @@ GameObject:
   - component: {fileID: 5597156277866735833}
   - component: {fileID: 8096587909154385436}
   - component: {fileID: 7811900488466059694}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Thruster_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32504,7 +32504,7 @@ GameObject:
   - component: {fileID: 7663927939637243249}
   - component: {fileID: 3433672458143977794}
   - component: {fileID: 3581506475964914952}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Structural_Frame_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32622,7 +32622,7 @@ GameObject:
   - component: {fileID: 8920097837281795084}
   - component: {fileID: 5586837913800688801}
   - component: {fileID: 6507315451245469333}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SmokeTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37471,7 +37471,7 @@ GameObject:
   - component: {fileID: 1949679415655447172}
   - component: {fileID: 5366298128745953281}
   - component: {fileID: 3775892395061410482}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_1_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37590,7 +37590,7 @@ GameObject:
   - component: {fileID: 9190052470215844048}
   - component: {fileID: 6008996898366526573}
   - component: {fileID: 4410312676561375061}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37706,7 +37706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7110986320972715267}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Particle System Force Fields
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37740,7 +37740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4051184913429408959}
   - component: {fileID: 4139488448973579899}
-  m_Layer: 1
+  m_Layer: 2
   m_Name: Particle System Force Field 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38269,7 +38269,7 @@ GameObject:
   - component: {fileID: 8649051753002353672}
   - component: {fileID: 6037269555956016049}
   - component: {fileID: 7250601216673078139}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Body_Support_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38385,7 +38385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5556263514132563874}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38416,7 +38416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9038772763089402806}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38450,7 +38450,7 @@ GameObject:
   - component: {fileID: 2781861287992758893}
   - component: {fileID: 2396969378191833859}
   - component: {fileID: 6609274836003722770}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_4_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38566,7 +38566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5608698362937202899}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38607,7 +38607,7 @@ GameObject:
   - component: {fileID: 6264040180745415267}
   - component: {fileID: 6553225006286163405}
   - component: {fileID: 2023260847406643542}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38901,8 +38901,8 @@ Transform:
   m_GameObject: {fileID: 3418669461106650493}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -100, z: 0}
-  m_LocalScale: {x: 0.6, y: 100, z: 0.6}
+  m_LocalPosition: {x: 0, y: -99.953, z: 0}
+  m_LocalScale: {x: 0.4, y: 100, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5432096239857474849}
@@ -38976,7 +38976,7 @@ GameObject:
   - component: {fileID: 781094474777666318}
   - component: {fileID: 4639215910553141271}
   - component: {fileID: 3653479279737122183}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Body_Support_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39092,7 +39092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 904787464164723716}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface204
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39126,7 +39126,7 @@ GameObject:
   - component: {fileID: 1628016004885262570}
   - component: {fileID: 5388003106034589835}
   - component: {fileID: 550673042759439176}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Embers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43952,7 +43952,7 @@ GameObject:
   - component: {fileID: 1506890939881598161}
   - component: {fileID: 3224847764966072087}
   - component: {fileID: 1538068203442595263}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BigExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48900,7 +48900,7 @@ GameObject:
   - component: {fileID: 6526353352658195336}
   - component: {fileID: 8063837861098784750}
   - component: {fileID: 5613456126169516541}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49018,7 +49018,7 @@ GameObject:
   - component: {fileID: 561863534411446573}
   - component: {fileID: 6155551690550034553}
   - component: {fileID: 4755788060313739912}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: FuelPercent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49128,7 +49128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8463702355599321641}
   - component: {fileID: 4328771852035449907}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface97
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49191,7 +49191,7 @@ GameObject:
   - component: {fileID: 8171224176659960296}
   - component: {fileID: 5142093584844425458}
   - component: {fileID: 6302789744893408055}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49294,7 +49294,7 @@ GameObject:
   - component: {fileID: 1197373513315044846}
   - component: {fileID: 7686400792338610843}
   - component: {fileID: 2565748665422713585}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: AdditonalSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54219,7 +54219,7 @@ GameObject:
   - component: {fileID: 6406266010614276326}
   - component: {fileID: 3021029573787272544}
   - component: {fileID: 5516893050634513432}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main_Descent_Engine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54335,7 +54335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4596022625464273817}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54368,7 +54368,7 @@ GameObject:
   - component: {fileID: 3681587244979114905}
   - component: {fileID: 6583738410919694975}
   - component: {fileID: 5976143589698800945}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Particle Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59271,7 +59271,7 @@ GameObject:
   - component: {fileID: 9209773545098509962}
   - component: {fileID: 3423001372748461307}
   - component: {fileID: 6527019391836263160}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Impulse Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59370,7 +59370,7 @@ GameObject:
   - component: {fileID: 6426406912725392547}
   - component: {fileID: 4603669585908702648}
   - component: {fileID: 8911698686605444335}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Explosion 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64317,7 +64317,7 @@ GameObject:
   - component: {fileID: 5273109421860189607}
   - component: {fileID: 2377081931277606875}
   - component: {fileID: 3751359742364047908}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64435,7 +64435,7 @@ GameObject:
   - component: {fileID: 2627261280548111173}
   - component: {fileID: 2456204668957303291}
   - component: {fileID: 1109096134424271052}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Shockwave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69341,7 +69341,7 @@ GameObject:
   - component: {fileID: 4123813040712322447}
   - component: {fileID: 5758622499125598863}
   - component: {fileID: 7742437865690592931}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74249,7 +74249,7 @@ GameObject:
   - component: {fileID: 8906576531227573175}
   - component: {fileID: 1537959046818259963}
   - component: {fileID: 7432932882704478595}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Landing_Pad_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74366,7 +74366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7827213614113130711}
   - component: {fileID: 4411780495420207893}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface110
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74429,7 +74429,7 @@ GameObject:
   - component: {fileID: 9022011000845418420}
   - component: {fileID: 5318327744073820833}
   - component: {fileID: 687646362190016291}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Body_Support_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74548,7 +74548,7 @@ GameObject:
   - component: {fileID: 9113898035102914032}
   - component: {fileID: 6112538161525966731}
   - component: {fileID: 2852039236188288132}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Landing_Pad_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74667,7 +74667,7 @@ GameObject:
   - component: {fileID: 8144840951272184742}
   - component: {fileID: 5686912972451265284}
   - component: {fileID: 8426841303886163351}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Thruster_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74786,7 +74786,7 @@ GameObject:
   - component: {fileID: 6664516922832777352}
   - component: {fileID: 7427069075021884889}
   - component: {fileID: 452856876203568156}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Thruster_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74902,7 +74902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2748488352350795732}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ShipGeometryRotator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74937,7 +74937,7 @@ GameObject:
   - component: {fileID: 9133476970817491386}
   - component: {fileID: 4233599615618867964}
   - component: {fileID: 75790140280952673}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_2_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75054,7 +75054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8609505293487934906}
   - component: {fileID: 6716294143651237885}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface203
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75117,7 +75117,7 @@ GameObject:
   - component: {fileID: 4681727869983483786}
   - component: {fileID: 7253438554831996065}
   - component: {fileID: 7649745303282001194}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_3_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75233,7 +75233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6750480087602046969}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface208
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75267,7 +75267,7 @@ GameObject:
   - component: {fileID: 7872819243996141972}
   - component: {fileID: 4443223799279926052}
   - component: {fileID: 8538055460765548566}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Embers (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80091,7 +80091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 871662875810228786}
   - component: {fileID: 3080986314735983939}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface136
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80151,7 +80151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5324478915430110638}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80182,7 +80182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7251761576922296748}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Lander
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80256,7 +80256,7 @@ GameObject:
   - component: {fileID: 7304917700439240700}
   - component: {fileID: 8012231394167953814}
   - component: {fileID: 8945699997384563127}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85163,7 +85163,7 @@ GameObject:
   - component: {fileID: 7349047058683749023}
   - component: {fileID: 4961383624751986480}
   - component: {fileID: 5675177621379266855}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85281,7 +85281,7 @@ GameObject:
   - component: {fileID: 8804799295859397722}
   - component: {fileID: 2129416295836998840}
   - component: {fileID: 4176262818295463496}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Particle Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90182,7 +90182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5253422451795133315}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface205
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90216,7 +90216,7 @@ GameObject:
   - component: {fileID: 4117433995677903025}
   - component: {fileID: 4564617898088135216}
   - component: {fileID: 2868919003558804681}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: AdditonalSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95141,7 +95141,7 @@ GameObject:
   - component: {fileID: 152598341849129300}
   - component: {fileID: 6604131572332096556}
   - component: {fileID: 3584234339664291014}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Satellites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95258,7 +95258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8337800694046538049}
   - component: {fileID: 4015119394050666662}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface123
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95325,7 +95325,7 @@ GameObject:
   - component: {fileID: 7699219733684056830}
   - component: {fileID: 3497541236892082160}
   - component: {fileID: 5061159320266944045}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95444,7 +95444,7 @@ GameObject:
   - component: {fileID: 4309721738313084548}
   - component: {fileID: 7376865367532338950}
   - component: {fileID: 7602226674509742427}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Thruster_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95563,7 +95563,7 @@ GameObject:
   - component: {fileID: 6052095097252348117}
   - component: {fileID: 775368873786523256}
   - component: {fileID: 5392922388308404593}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_3_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95680,7 +95680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8906318665885542867}
   - component: {fileID: 149546679545484645}
-  m_Layer: 1
+  m_Layer: 2
   m_Name: Particle System Force Field 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96209,7 +96209,7 @@ GameObject:
   - component: {fileID: 6479366230401249525}
   - component: {fileID: 897380564332782270}
   - component: {fileID: 7360907153033255911}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Thruster_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96325,7 +96325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4537198563509377813}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96358,7 +96358,7 @@ GameObject:
   - component: {fileID: 2223348233573228296}
   - component: {fileID: 8799200118190388711}
   - component: {fileID: 7032611571822734930}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GiantExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101201,7 +101201,7 @@ GameObject:
   - component: {fileID: 6600597445039592012}
   - component: {fileID: 920320504073923423}
   - component: {fileID: 6847521552551300300}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Leg_1_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101320,7 +101320,7 @@ GameObject:
   - component: {fileID: 8220816652829903686}
   - component: {fileID: 6847092927164933054}
   - component: {fileID: 2359153119685270249}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101436,7 +101436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8839743513942801543}
-  m_Layer: 4
+  m_Layer: 2
   m_Name: Particle System Force Fields
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101469,7 +101469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5153843180652146415}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101503,7 +101503,7 @@ GameObject:
   - component: {fileID: 6089723573598664816}
   - component: {fileID: 842614717567307299}
   - component: {fileID: 5154586928329104697}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Landing_Pad_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101619,7 +101619,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2397844855035920811}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101653,7 +101653,7 @@ GameObject:
   - component: {fileID: 4609667639239884966}
   - component: {fileID: 2815441944815893898}
   - component: {fileID: 6331971477162475567}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Thruster_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101769,7 +101769,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 432923626893087592}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101807,13 +101807,33 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 205
       objectReference: {fileID: 0}
+    - target: {fileID: 308209756502738310, guid: 5a23a80f9f9c3c6448dbedd7b93cf39b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1236058030786495401, guid: 5a23a80f9f9c3c6448dbedd7b93cf39b, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3267061558871693795, guid: 5a23a80f9f9c3c6448dbedd7b93cf39b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3651737720639813386, guid: 5a23a80f9f9c3c6448dbedd7b93cf39b, type: 3}
       propertyPath: m_Name
       value: Minimap
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651737720639813386, guid: 5a23a80f9f9c3c6448dbedd7b93cf39b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700641876022809699, guid: 5a23a80f9f9c3c6448dbedd7b93cf39b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355266597498915507, guid: 5a23a80f9f9c3c6448dbedd7b93cf39b, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6151956330197895023, guid: 5a23a80f9f9c3c6448dbedd7b93cf39b, type: 3}
       propertyPath: far clip plane
