@@ -12,15 +12,12 @@ public class ExplodeShip : MonoBehaviour
     //vfx for explosion goes here (Bia)
     public VisualEffect ExplosionVFX;
     public ParticleSystem particles;
-
-    //the quick and dirty way, I like quick and dirty...
-    public ShipController shipController;
-
-    private Fullscreen fullscreen;
-
     public StudioEventEmitter emitter;
 
-    BallGravity gravity;
+
+    private ShipController shipController;
+    private Fullscreen fullscreen;
+    private BallGravity gravity;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -28,8 +25,10 @@ public class ExplodeShip : MonoBehaviour
         ExplosionVFX.pause = true;
         particles.Stop();
         fullscreen = GetComponent<Fullscreen>();
-        gravity = GetComponent<BallGravity>();  
-        
+        gravity = GetComponent<BallGravity>();
+        shipController = GetComponent<ShipController>();   
+
+
     }
 
     // Update is called once per frame
@@ -97,14 +96,10 @@ public class ExplodeShip : MonoBehaviour
         
         //MAKE SURE IT RUNS ONCE
         StopAllCoroutines();
+                       
+        SceneManager.LoadScene(shipController.sceneNumber);        
 
-        //load it if greater than zero
-        if (shipController.sceneNumber > 0)
-            SceneManager.LoadScene(shipController.sceneNumber);
-        else
-            SceneManager.LoadScene(0); // reload first scene
-
-            Debug.Log("Reset done Scene: " + shipController.sceneNumber);
+        Debug.Log("Reset done Scene: " + shipController.sceneNumber);
         Debug.Log("Reset Crash done");
 
     }

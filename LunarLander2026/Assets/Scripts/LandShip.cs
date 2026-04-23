@@ -6,12 +6,12 @@ public class LandShip : MonoBehaviour
 {
     
     public bool landed = false;
-    public int SceneNumber = 0;  //first scene is already loaded
-
+    private ShipController shipController;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        shipController = GetComponent<ShipController>();    
     }
 
     // Update is called once per frame
@@ -35,11 +35,11 @@ public class LandShip : MonoBehaviour
         //MAKE SURE IT RUNS ONCE
         StopAllCoroutines();
 
-        //bump next
-        SceneNumber++;
+        //add one to it and go!
+        int scenenumber = shipController.sceneNumber + 1;
         //load it
-        Debug.Log("Reset done Scene: " + SceneNumber);
-        SceneManager.LoadScene(SceneNumber);
+        Debug.Log("Reset done Scene: " + scenenumber);
+        SceneManager.LoadScene(scenenumber);
        
     }
 }
