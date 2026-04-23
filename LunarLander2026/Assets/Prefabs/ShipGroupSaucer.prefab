@@ -25709,7 +25709,7 @@ Transform:
   m_GameObject: {fileID: 2727155702516775595}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.71251, y: 22.38, z: 39.74063}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25914,7 +25914,7 @@ MonoBehaviour:
   Fuelscroll: {fileID: 9084769356708046242}
   shipCam: {fileID: 3098177631923153406}
   ShipRotator: {fileID: 7604312892965291862}
-  sceneNumber: 1
+  sceneNumber: 0
 --- !u!114 &9222715422907332361
 MonoBehaviour:
   m_ObjectHideFlags: 0
