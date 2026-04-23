@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/grass test.unity
     guid: 5148e5ab784dafc46af4c3543ab1a363
+  - enabled: 1
+    path: Assets/Scenes/Benedikt_Scene.unity
+    guid: 4d776f8e383f6cf4c98326748d2a4dbe
+  - enabled: 1
+    path: Assets/Scenes/BallScene.unity
+    guid: 0d1292e77e9fa0646849a208b7321974
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
