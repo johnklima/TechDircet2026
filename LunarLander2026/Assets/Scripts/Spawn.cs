@@ -1,16 +1,21 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Spawn : MonoBehaviour
 {
     public float sceneGravity = -2.5f;
     public int sceneNumber = 0;
     public int requiredLandings = 0;
 
+    public Text PadsText;
+    public Text PlanetsText;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //set up the scene
-        
+        PadsText.text = "Pads Needed: " + requiredLandings;
+        PlanetsText.text = "Planets Landed: " + sceneNumber;
+
         //get ship
         GameObject ship = GameObject.Find("Ship");
         
