@@ -73255,7 +73255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawn
   sceneGravity: -2.5
-  sceneNumber: 1
+  sceneNumber: 0
   requiredLandings: 1
   PadsText: {fileID: 6723306272341477503}
   PlanetsText: {fileID: 3247561236638175333}
