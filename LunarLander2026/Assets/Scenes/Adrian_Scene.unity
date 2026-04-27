@@ -141,43 +141,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 398.06
+      value: 523.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 236
+      value: 226.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 770.4
+      value: 724.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9625525
+      value: 0.88253444
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.13067958
+      value: 0.13452563
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.2353605
+      value: 0.45059392
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.031953413
+      value: -0.0010166484
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 15.463
+      value: 13.79
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 27.48
+      value: 54.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 7.064
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c4676476308be9b4c9ae625839c0c222, type: 3}
       propertyPath: m_Name
@@ -438,27 +438,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3579f3c9afd11d64aad97fbc69e5a264, type: 3}
       propertyPath: m_LocalScale.x
-      value: 13.653944
+      value: 15.748283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3579f3c9afd11d64aad97fbc69e5a264, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.192022
+      value: 12.536252
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3579f3c9afd11d64aad97fbc69e5a264, type: 3}
       propertyPath: m_LocalScale.z
-      value: 8.943757
+      value: 13.686631
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3579f3c9afd11d64aad97fbc69e5a264, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 725.4058
+      value: 725.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3579f3c9afd11d64aad97fbc69e5a264, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 164.17929
+      value: 164
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3579f3c9afd11d64aad97fbc69e5a264, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 510.64926
+      value: 510.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3579f3c9afd11d64aad97fbc69e5a264, type: 3}
       propertyPath: m_LocalRotation.w
@@ -889,7 +889,7 @@ MonoBehaviour:
   splatmapResolution: 1024
   colorMapResolution: 2048
   layerSettings:
-  - enabled: 0
+  - enabled: 1
     layer: {fileID: 8574412962073106934, guid: 0cb80391d22817b42a6231c64293ae96, type: 2}
     modifierStack:
     - {fileID: 0}
@@ -898,7 +898,7 @@ MonoBehaviour:
     modifierStack:
     - {fileID: 0}
   - enabled: 1
-    layer: {fileID: 8574412962073106934, guid: 59b98ca43f27d8c4a89d4058d2a962e5, type: 2}
+    layer: {fileID: 8574412962073106934, guid: 9a73362259799e748b5f32ee4d5b9f54, type: 2}
     modifierStack:
     - {fileID: 0}
   autoRepaint: 1
