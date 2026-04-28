@@ -1823,6 +1823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShipGroupLander
       objectReference: {fileID: 0}
+    - target: {fileID: 7218539116522963307, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8795308158427255299, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: sceneGravity
       value: -3
