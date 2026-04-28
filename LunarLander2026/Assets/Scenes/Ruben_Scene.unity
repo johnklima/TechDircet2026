@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.66202384, g: 0.7527148, b: 0.8207547, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.001
@@ -1809,6 +1809,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77655a1ea2f44fc4da5c11bdbedcbe5c, type: 3}
+--- !u!114 &206824487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5a4738b539472faa518e606162927c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: sc.terrain.painter.runtime::sc.terrain.proceduralpainter.Curvature
+  enabled: 1
+  label: Curvature
+  blendMode: 0
+  opacity: 100
+  passIndex: 2
+  solver: 0
+  minMax: {x: 0.08169935, y: 0.4754902}
+  radius: 7.79
+  minFalloff: 0.048
+  maxFalloff: 0.001
 --- !u!1001 &212321616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1945,11 +1967,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: sc.terrain.painter.runtime::sc.terrain.proceduralpainter.Slope
   enabled: 1
   label: Slope
-  blendMode: 0
+  blendMode: 3
   opacity: 100
   passIndex: 1
   minMax: {x: 10, y: 10}
-  minFalloff: 22.2
+  minFalloff: 15.1
   maxFalloff: 13.2
 --- !u!1001 &286097054
 PrefabInstance:
@@ -9563,6 +9585,26 @@ MonoBehaviour:
   radius: 16
   minFalloff: 0.001
   maxFalloff: 0.001
+--- !u!114 &1375572694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2562637f396e4c10acd3fa9926b53a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: sc.terrain.painter.runtime::sc.terrain.proceduralpainter.Slope
+  enabled: 1
+  label: Slope
+  blendMode: 3
+  opacity: 100
+  passIndex: 1
+  minMax: {x: 14.411764, y: 26.176476}
+  minFalloff: 72.5
+  maxFalloff: 0.001
 --- !u!1001 &1379371805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10883,6 +10925,96 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f72efdbd2e5871409f0df3d85fc0f17, type: 3}
+--- !u!1 &1563234381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1563234384}
+  - component: {fileID: 1563234383}
+  - component: {fileID: 1563234382}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1563234382
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563234381}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 547d17544e41bec4cbf0b3ebd15160cf, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1563234383
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563234381}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1563234384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563234381}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.119973116, y: -0.87741584, z: 0.11979147, w: -0.44877368}
+  m_LocalPosition: {x: 17726, y: 14773, z: 9227}
+  m_LocalScale: {x: 21048.121, y: 21048.121, z: 21048.121}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 5.885, y: -235.144, z: -18.647}
 --- !u!1001 &1564876683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11521,15 +11653,24 @@ MonoBehaviour:
   colorMapResolution: 2048
   layerSettings:
   - enabled: 1
-    layer: {fileID: 8574412962073106934, guid: c52ad77efecd38146bfb167ad0f38daf, type: 2}
+    layer: {fileID: 8574412962073106934, guid: 9edbbde67857751448932c09e68f701d, type: 2}
+    modifierStack:
+    - {fileID: 206824487}
+    - {fileID: 1937003654}
+  - enabled: 1
+    layer: {fileID: 8574412962073106934, guid: 59ac82a7e61510240a3a9d840e21a80b, type: 2}
     modifierStack:
     - {fileID: 1368054930}
   - enabled: 1
-    layer: {fileID: 8574412962073106934, guid: eb742adf8ec7a8b4684109a139de6019, type: 2}
+    layer: {fileID: 8574412962073106934, guid: df1d284187f80c146a054d6ca76166a2, type: 2}
     modifierStack:
     - {fileID: 286093948}
   - enabled: 1
-    layer: {fileID: 8574412962073106934, guid: 59b98ca43f27d8c4a89d4058d2a962e5, type: 2}
+    layer: {fileID: 8574412962073106934, guid: 552b08c170e7b434b8a70f2a4f505c01, type: 2}
+    modifierStack:
+    - {fileID: 1375572694}
+  - enabled: 1
+    layer: {fileID: 8574412962073106934, guid: 16c32b53b8d4b1b4ba3bb0419fc0a16b, type: 2}
     modifierStack:
     - {fileID: 1953667739}
   autoRepaint: 1
@@ -13257,6 +13398,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f455d569c8a6f046b515e2ccfc60267, type: 3}
+--- !u!114 &1937003654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2562637f396e4c10acd3fa9926b53a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: sc.terrain.painter.runtime::sc.terrain.proceduralpainter.Slope
+  enabled: 1
+  label: Slope
+  blendMode: 0
+  opacity: 100
+  passIndex: 1
+  minMax: {x: 12.941176, y: 24.411768}
+  minFalloff: 13.4
+  maxFalloff: 0.001
 --- !u!1001 &1951124735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14282,3 +14443,4 @@ SceneRoots:
   - {fileID: 357874174}
   - {fileID: 438027297}
   - {fileID: 792451933}
+  - {fileID: 1563234384}
