@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 1
-  m_FogColor: {r: 0.71595764, g: 0.8773585, b: 0.5007565, a: 1}
+  m_FogColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 0.5882353}
   m_FogMode: 3
   m_FogDensity: 0.002
   m_LinearFogStart: 30
@@ -996,9 +996,10 @@ GameObject:
   - component: {fileID: 461668684}
   - component: {fileID: 461668683}
   - component: {fileID: 461668682}
+  - component: {fileID: 461668685}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1078,6 +1079,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1934900163}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &461668685
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461668681}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &535672917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1527,7 +1550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3674637425649282700, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 718.4
+      value: 770.7
       objectReference: {fileID: 0}
     - target: {fileID: 3674637425649282700, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1535,7 +1558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3674637425649282700, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 329.66
+      value: 349.5
       objectReference: {fileID: 0}
     - target: {fileID: 5227271654377490951, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1559,7 +1582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795308158427255299, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: sceneGravity
-      value: -3
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 8795308158427255299, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: requiredLandings
