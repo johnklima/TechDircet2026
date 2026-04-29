@@ -2127,6 +2127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Curved_Monolith_UV (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2237965159504757594, guid: 1a97539408b1b8144a65bef464e5f548, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd22cc64ae6752e4d8affe5469a3fff2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2372,6 +2376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Curved_Monolith_UV
       objectReference: {fileID: 0}
+    - target: {fileID: 2237965159504757594, guid: 1a97539408b1b8144a65bef464e5f548, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd22cc64ae6752e4d8affe5469a3fff2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2598,6 +2606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Curved_Monolith_UV (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2237965159504757594, guid: 1a97539408b1b8144a65bef464e5f548, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd22cc64ae6752e4d8affe5469a3fff2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2704,6 +2716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Curved_Monolith_UV (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2237965159504757594, guid: 1a97539408b1b8144a65bef464e5f548, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd22cc64ae6752e4d8affe5469a3fff2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8952,6 +8968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Curved_Monolith_UV (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2237965159504757594, guid: 1a97539408b1b8144a65bef464e5f548, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd22cc64ae6752e4d8affe5469a3fff2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9223,6 +9243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Curved_Monolith_UV (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2237965159504757594, guid: 1a97539408b1b8144a65bef464e5f548, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd22cc64ae6752e4d8affe5469a3fff2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
