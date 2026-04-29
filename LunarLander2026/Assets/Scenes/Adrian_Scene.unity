@@ -1964,15 +1964,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 996785795518994106, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 996785795518994106, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 996785795518994106, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1341441825280411794, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: far clip plane
@@ -2048,7 +2048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7218539116522963307, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8795308158427255299, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: sceneGravity
