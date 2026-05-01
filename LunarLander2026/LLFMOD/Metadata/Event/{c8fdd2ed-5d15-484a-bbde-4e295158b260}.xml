@@ -123,7 +123,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{080b58b0-ed4a-4bbb-a884-9e4d14abb7a7}">
 		<property name="volume">
-			<value>10</value>
+			<value>-20</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -185,11 +185,22 @@
 	<object class="MixerBusEffectChain" id="{4155bf49-a3e1-4ec4-9418-8bd0443df1a1}">
 		<relationship name="effects">
 			<destination>{c80b1b88-2da0-403f-8e1a-3faeaa3f5186}</destination>
+			<destination>{78998c72-d38e-4063-8043-a8b41fc832af}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{041ca689-a0b8-42cf-9754-c1b95fece0da}" />
 	<object class="MixerBusFader" id="{b390dcdb-04bf-4d9c-b797-4e42f1262183}" />
-	<object class="SpatialiserEffect" id="{2a553f41-b691-45e9-89c1-1600dd50c59a}" />
+	<object class="SpatialiserEffect" id="{2a553f41-b691-45e9-89c1-1600dd50c59a}">
+		<property name="minimumDistance">
+			<value>10000</value>
+		</property>
+		<property name="maximumDistance">
+			<value>10000</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{e4413f04-a822-4b13-bf1f-a87a3d01b6b3}">
 		<property name="position">
 			<value>2</value>
@@ -229,4 +240,27 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{c80b1b88-2da0-403f-8e1a-3faeaa3f5186}" />
+	<object class="SFXReverbEffect" id="{78998c72-d38e-4063-8043-a8b41fc832af}">
+		<property name="earlyDelay">
+			<value>0</value>
+		</property>
+		<property name="lateDelay">
+			<value>100</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>100</value>
+		</property>
+		<property name="lowShelfFrequency">
+			<value>1000</value>
+		</property>
+		<property name="lowShelfGain">
+			<value>12</value>
+		</property>
+		<property name="highCut">
+			<value>20</value>
+		</property>
+		<property name="earlyLateMix">
+			<value>0</value>
+		</property>
+	</object>
 </objects>
