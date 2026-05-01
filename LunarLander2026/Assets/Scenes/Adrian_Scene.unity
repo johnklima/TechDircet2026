@@ -3965,6 +3965,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2505449385200955196, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+      propertyPath: field of view
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505449385200955196, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+      propertyPath: far clip plane
+      value: 500000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897315575873689039, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+      propertyPath: m_Antialiasing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3674637425649282700, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 674.1
