@@ -1341,8 +1341,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5777815003065422876, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+      propertyPath: sceneGravity
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5777815003065422876, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: requiredLandings
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6612743619798225881, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_LocalPosition.y
