@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StarMaterial
+  m_Name: StarShaderMat 1
   m_Shader: {fileID: -6465566751694194690, guid: 86174f01cf6a0244cad0395c3fbe0b62, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -51,13 +51,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CellDensity: 89.08
-    - _CellSpeed: 8.4
+    - _CellDensity: 101.77
+    - _CellSpeed: 0.26
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SolarFlare: -3.92
+    - _SolarFlare: -3.52
     m_Colors:
-    - _BaseColor: {r: 335.33115, g: 212.35211, b: 74.34228, a: 1}
-    - _CellColor: {r: 1.6233256, g: 0.47689018, b: 0.114857934, a: 1}
+    - _BaseColor: {r: 186.13782, g: 1024, b: 0, a: 1}
+    - _CellColor: {r: 0.31494418, g: 1.0836337, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
