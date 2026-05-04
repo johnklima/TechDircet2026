@@ -189,6 +189,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1725251503}
     m_Modifications:
+    - target: {fileID: 1210203236138937973, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 2649738343918753319, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
       propertyPath: m_Name
       value: RubenLandingPad (1)
@@ -249,6 +253,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3491141800723730374, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151758046328573408, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021983818914960812, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212287288345896609, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7318605821737084549, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387239486249212886, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745876203556608301, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629732494628973318, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -286,7 +322,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &203844586
@@ -735,6 +771,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1725251503}
     m_Modifications:
+    - target: {fileID: 1210203236138937973, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 2649738343918753319, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
       propertyPath: m_Name
       value: RubenLandingPad
@@ -794,6 +834,38 @@ PrefabInstance:
     - target: {fileID: 3426696504431217821, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491141800723730374, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151758046328573408, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021983818914960812, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212287288345896609, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7318605821737084549, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387239486249212886, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745876203556608301, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629732494628973318, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1347,6 +1419,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1725251503}
     m_Modifications:
+    - target: {fileID: 1210203236138937973, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 2649738343918753319, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
       propertyPath: m_Name
       value: RubenLandingPad (2)
@@ -1407,6 +1483,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3491141800723730374, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151758046328573408, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021983818914960812, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212287288345896609, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7318605821737084549, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387239486249212886, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745876203556608301, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629732494628973318, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1444,7 +1552,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1001 &1823934830
