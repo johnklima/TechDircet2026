@@ -1,0 +1,9 @@
+speedometer rotation notes
+
+no speed = rotation z 245
+max speed = rotation z -20
+
+static speed = rotation z 0
+
+
+will need to make the "needle" image euler rotation go from z rotation 245 to z rotation -20 with code. 
