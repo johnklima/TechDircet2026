@@ -52306,7 +52306,6 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6785395711069072592}
   - {fileID: 1604583283645939265}
   - {fileID: 3441540979761414600}
   - {fileID: 8745370247589001059}
@@ -57267,12 +57266,12 @@ Transform:
   m_GameObject: {fileID: 5712875502445925818}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.011999989, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3437788430086942604}
-  m_Father: {fileID: 8970994616795628484}
+  m_Father: {fileID: 4699120082588815110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6110814810666682711
 MonoBehaviour:
@@ -62407,6 +62406,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6785395711069072592}
   - {fileID: 2963164770550788258}
   - {fileID: 5895487616926191994}
   - {fileID: 6999408250814467360}
@@ -62602,6 +62602,7 @@ MonoBehaviour:
   emitter: {fileID: 86289572658110717}
   Consumption: 0
   FuelCapacity: 10
+  FuelRefill: 3
   FuelPercent: 0
   Fuelslider: {fileID: 997771411235787374}
   SpeedoMeter: {fileID: 2081353748001019845}
@@ -62638,6 +62639,7 @@ MonoBehaviour:
   particles: {fileID: 1810320787527891749}
   emitter: {fileID: 8847848206515164688}
   spawn: {fileID: 271757305192440578}
+  landingBeam: {fileID: 6785395711069072592}
 --- !u!114 &7741692858277094170
 MonoBehaviour:
   m_ObjectHideFlags: 0

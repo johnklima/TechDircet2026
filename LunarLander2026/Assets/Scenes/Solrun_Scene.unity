@@ -1352,6 +1352,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4303266710625032723, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+      propertyPath: landingBeam
+      value: 
+      objectReference: {fileID: 459619012}
     - target: {fileID: 4945074837282717937, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1429,6 +1433,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+--- !u!4 &459619012 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4347184395942720010, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+  m_PrefabInstance: {fileID: 459619011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &518582218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5929467314133286348, guid: 7266d1bfe7d317e4abc1dd51e852d33a, type: 3}

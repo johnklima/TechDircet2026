@@ -16,8 +16,11 @@ public class ShipController : MonoBehaviour
     //rocket sound
     public StudioEventEmitter emitter;
 
+
+    //tweaky values
     public float Consumption;
-    public float FuelCapacity = 3.0f;
+    public float FuelCapacity = 10.0f;
+    public float FuelRefill = 3.0f;
     public float FuelPercent;
 
     public UnityEngine.UI.Slider Fuelslider;

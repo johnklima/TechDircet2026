@@ -57686,6 +57686,7 @@ MonoBehaviour:
   emitter: {fileID: 9098955480191590698}
   Consumption: 0
   FuelCapacity: 10
+  FuelRefill: 3
   FuelPercent: 0
   Fuelslider: {fileID: 4062698862307962311}
   SpeedoMeter: {fileID: 5238198218497469871}
@@ -57722,6 +57723,7 @@ MonoBehaviour:
   particles: {fileID: 5752685285846312049}
   emitter: {fileID: 2838516657294457726}
   spawn: {fileID: 654550864074704814}
+  landingBeam: {fileID: 0}
 --- !u!114 &5901670719202387350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73868,6 +73870,7 @@ GameObject:
   - component: {fileID: 6846551977449807765}
   - component: {fileID: 5347282991899115227}
   - component: {fileID: 888897968165568918}
+  - component: {fileID: 5497048127947151770}
   m_Layer: 0
   m_Name: Rocket2 VFX
   m_TagString: Untagged
@@ -73996,6 +73999,34 @@ VFXRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
+--- !u!114 &5497048127947151770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274832505913045691}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2935872ef352233488d8b93e9b5c3936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallGravity
+  GRAVITY_CONSTANT: -9.8
+  velocity: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  thrust: {x: 0, y: 0, z: 0}
+  finalForce: {x: 0, y: 0, z: 0}
+  mass: 1
+  SurfaceHeight: 0
+  CurrentHeight: 0
+  onSurface: 0
+  impulse: {x: 0, y: 0, z: 0}
+  timeScalar: 1
+  Geometry: {fileID: 0}
+  InertialDampnerXZ: 1
+  DampnFactor: 0.5
+  angAcceleration: {x: 0, y: 0, z: 0}
+  AngularVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &6403295789220200615
 GameObject:
   m_ObjectHideFlags: 0

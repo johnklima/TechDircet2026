@@ -15,6 +15,8 @@ public class ExplodeShip : MonoBehaviour
     public StudioEventEmitter emitter;
     public Spawn spawn;
 
+    public Transform landingBeam;
+
 
     private ShipController shipController;
     private Fullscreen fullscreen;
@@ -58,6 +60,9 @@ public class ExplodeShip : MonoBehaviour
           
                
             }
+
+            //disable beam
+            landingBeam.gameObject.SetActive(false);
 
             //disable controller
             shipController.enabled = false;
