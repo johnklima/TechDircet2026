@@ -30,7 +30,7 @@ public class Spawn : MonoBehaviour
         //reset physics and state
         ship.GetComponent<BallGravity>().OnRespawn();
         ship.GetComponent<BallGravity>().GRAVITY_CONSTANT = sceneGravity; // TODO: param this to OnRespawn
-        ship.GetComponent<ShipController>().sceneNumber = sceneNumber;
+        
         ship.GetComponent<LandShip>().requiredLandings = requiredLandings;
 
         //hide spawn (me)

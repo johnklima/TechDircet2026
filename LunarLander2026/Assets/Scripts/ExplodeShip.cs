@@ -13,6 +13,7 @@ public class ExplodeShip : MonoBehaviour
     public VisualEffect ExplosionVFX;
     public ParticleSystem particles;
     public StudioEventEmitter emitter;
+    public Spawn spawn;
 
 
     private ShipController shipController;
@@ -97,9 +98,9 @@ public class ExplodeShip : MonoBehaviour
         //MAKE SURE IT RUNS ONCE
         StopAllCoroutines();
                        
-        SceneManager.LoadScene(shipController.sceneNumber);        
+        SceneManager.LoadScene(spawn.sceneNumber);        
 
-        Debug.Log("Reset done Scene: " + shipController.sceneNumber);
+        Debug.Log("Reset done Scene: " + spawn.sceneNumber);
         Debug.Log("Reset Crash done");
 
     }

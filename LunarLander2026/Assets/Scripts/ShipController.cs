@@ -26,7 +26,6 @@ public class ShipController : MonoBehaviour
     public Camera shipCam;
     public Transform ShipRotator;
 
-    public int sceneNumber = 0;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
