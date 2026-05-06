@@ -8,6 +8,8 @@ public class LandShip : MonoBehaviour
     public bool landed = false;
     private ShipController shipController;
     private BallGravity ballGravity;
+
+    public Spawn spawn;
     public int landings = 0;
     public int requiredLandings = 0;
 
@@ -51,7 +53,7 @@ public class LandShip : MonoBehaviour
         StopAllCoroutines();
 
         //add one to it and go!
-        int scenenumber = shipController.sceneNumber + 1;
+        int scenenumber = spawn.sceneNumber + 1;
         //load it
         Debug.Log("Reset done Scene: " + scenenumber);
         SceneManager.LoadScene(scenenumber);

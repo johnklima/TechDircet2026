@@ -16,15 +16,19 @@ public class ShipController : MonoBehaviour
     //rocket sound
     public StudioEventEmitter emitter;
 
+
+    //tweaky values
     public float Consumption;
-    public float FuelCapacity = 3.0f;
+    public float FuelCapacity = 10.0f;
+    public float FuelRefill = 3.0f;
     public float FuelPercent;
-    public Scrollbar Fuelscroll;
+
+    public UnityEngine.UI.Slider Fuelslider;
+    public RectTransform SpeedoMeter;
 
     public Camera shipCam;
     public Transform ShipRotator;
 
-    public int sceneNumber = 0;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -47,10 +51,23 @@ public class ShipController : MonoBehaviour
         FuelPercent = ( Consumption / FuelCapacity);
 
 
-        if(Fuelscroll)
+        if(Fuelslider)
         {
-            
-            Fuelscroll.size = FuelPercent;
+
+            Fuelslider.value = FuelPercent;
+
+        }
+        if(SpeedoMeter)
+        {
+            //figure out the scalar of z to match range of rotation (240 to -20)
+            float z = 240.0f - ShipPhysics.velocity.magnitude * 15;
+
+            if(z < -20 )
+                z= -20;
+            if (z > 240)
+                z = 240;
+
+            SpeedoMeter.rotation = Quaternion.Euler(0, 0, z);
 
         }
 

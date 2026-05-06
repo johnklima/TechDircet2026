@@ -13,6 +13,9 @@ public class ExplodeShip : MonoBehaviour
     public VisualEffect ExplosionVFX;
     public ParticleSystem particles;
     public StudioEventEmitter emitter;
+    public Spawn spawn;
+
+    public Transform landingBeam;
 
 
     private ShipController shipController;
@@ -58,6 +61,9 @@ public class ExplodeShip : MonoBehaviour
                
             }
 
+            //disable beam
+            landingBeam.gameObject.SetActive(false);
+
             //disable controller
             shipController.enabled = false;
 
@@ -97,9 +103,9 @@ public class ExplodeShip : MonoBehaviour
         //MAKE SURE IT RUNS ONCE
         StopAllCoroutines();
                        
-        SceneManager.LoadScene(shipController.sceneNumber);        
+        SceneManager.LoadScene(spawn.sceneNumber);        
 
-        Debug.Log("Reset done Scene: " + shipController.sceneNumber);
+        Debug.Log("Reset done Scene: " + spawn.sceneNumber);
         Debug.Log("Reset Crash done");
 
     }

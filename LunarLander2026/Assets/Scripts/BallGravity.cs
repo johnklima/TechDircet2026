@@ -124,8 +124,10 @@ public class BallGravity : MonoBehaviour
                         
                         onSurface = true;
                         //refuel ship
-                        transform.GetComponent<ShipController>().FuelCapacity += 10.0f;
-                        transform.GetComponent<ShipController>().Consumption = 0.0f;
+
+                        ShipController shipcontrol = transform.GetComponent<ShipController>();
+                        shipcontrol.FuelCapacity += shipcontrol.FuelRefill;
+                        shipcontrol.Consumption = 0.0f;
                         transform.GetComponent<LandShip>().landed = true;
                         
                     }
