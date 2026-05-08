@@ -46,7 +46,7 @@ Material:
     - _StarPower: 39
     - _ZenithBlend: 1.1
     m_Colors:
-    - _GroundColor: {r: 0.37528718, g: 0.17354931, b: 0.49056602, a: 1}
+    - _GroundColor: {r: 0.021275867, g: 0.008677468, b: 0.028301895, a: 1}
     - _HorizonColor: {r: 0, g: 0, b: 0, a: 1}
     - _SkyColor: {r: 0.04018334, g: 0.04018334, b: 0.4056604, a: 1}
   m_BuildTextureStacks: []
