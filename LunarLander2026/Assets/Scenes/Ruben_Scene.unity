@@ -25613,6 +25613,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c78550f90efb8894e842a6db689e5751, type: 3}
   m_PrefabInstance: {fileID: 704160547}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &704948223 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4347184395942720010, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+  m_PrefabInstance: {fileID: 821873785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705249873
 GameObject:
   m_ObjectHideFlags: 0
@@ -30453,6 +30458,10 @@ PrefabInstance:
       propertyPath: spawn
       value: 
       objectReference: {fileID: 991330531}
+    - target: {fileID: 4303266710625032723, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+      propertyPath: landingBeam
+      value: 
+      objectReference: {fileID: 704948223}
     - target: {fileID: 5227271654377490951, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 156.6
