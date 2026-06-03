@@ -2425,6 +2425,11 @@ MonoBehaviour:
   m_MoveSpeed: 10
   m_MoveSpeedIncrement: 2.5
   m_Turbo: 10
+--- !u!4 &1012424786 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4347184395942720010, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+  m_PrefabInstance: {fileID: 1902081194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1065861146 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6151758046328573408, guid: fe624e8151be17a4b97020f1bf7c2851, type: 3}
@@ -3509,6 +3514,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4303266710625032723, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+      propertyPath: landingBeam
+      value: 
+      objectReference: {fileID: 1012424786}
     - target: {fileID: 4945074837282717937, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

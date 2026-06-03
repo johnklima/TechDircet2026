@@ -436,6 +436,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4303266710625032723, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+      propertyPath: landingBeam
+      value: 
+      objectReference: {fileID: 1173894787}
     - target: {fileID: 4893216193381033075, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
       propertyPath: DampnFactor
       value: 2
@@ -780,6 +784,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebfc14c3f86d8384eb5005bcfd84412e, type: 3}
+--- !u!4 &1173894787 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4347184395942720010, guid: 50f5f768c509ebb4193e17357ddac43f, type: 3}
+  m_PrefabInstance: {fileID: 555771925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1294171622
 PrefabInstance:
   m_ObjectHideFlags: 0
